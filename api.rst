@@ -4,6 +4,7 @@ Advanced API
 
 .. warning:: This is not yet activated on the site. Any and all requests against it will fail until we say so. So there. ;)
 
+
 Dependencies
 ============
 
@@ -38,7 +39,7 @@ Example
             "image_url": "http://ecx.images-amazon.com/images/I/41FgviU3O8L._SL160_.jpg", 
             "pk": "4f3c015febae260004000000",
             "adder": "audreyr",
-        }
+        },
     ]
 
     
