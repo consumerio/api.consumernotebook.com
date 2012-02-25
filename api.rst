@@ -59,7 +59,7 @@ to_date   datetime n/a     Return only lists created before this time
 depth     integer  0       0=titles/description/uri/added; 1=Includes products
 ========= ======== ======= ======================================================
 
-Example with Depth 0
+Example Depth 0
 ------------------------
 
 .. sourcecode:: javascript
