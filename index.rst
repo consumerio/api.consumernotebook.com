@@ -8,6 +8,8 @@ Contents:
    
    license
    basic-add-product
+   api
+
 
 
 
