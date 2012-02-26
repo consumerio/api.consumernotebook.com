@@ -13,16 +13,16 @@ Dependencies
 https://api.consumernotebook.com/v1/products/
 =============================================
 
-Returns all products in the user"s account.
+Returns all products in the user"s account, ordered by when they were last modified.
 
 **Method**: GET
 
 ========= ======== ======================================================
 Argument  Type     
 ========= ======== ======================================================
-page      integer  A page of 20 Products.
-from_date datetime Return only products added after this time
-to_date   datetime Return only products created before this time
+page      integer  A page of 20 Products. Defaults to 1.
+from_date datetime Return only products modified after this time
+to_date   datetime Return only products modified before this time
 ========= ======== ======================================================
 
 Example
@@ -35,7 +35,7 @@ Example
         {
             "title": "Stella McCartney womens paisley ash metallic tank top 34", 
             "purchase_url": "http://amzn.com/B005SWMIQO/",
-            "added": "2012-2-15 11:2:55", 
+            "modified": "2012-2-15 11:2:55", 
             "url": "http://consumernotebook.com/lists/stella-mccartney-womens-paisley-ash-metallic-tank-top-34/4f3c015febae260004000000/",
             "image_url": "http://ecx.images-amazon.com/images/I/41FgviU3O8L._SL160_.jpg", 
         },
@@ -53,9 +53,9 @@ Returns lists from a user"s account.
 ========= ======== ======= ======================================================
 Argument  Type     Default 
 ========= ======== ======= ======================================================
-page      integer  1       A page of 20 lists.
-from_date datetime n/a     Return only lists added after this time
-to_date   datetime n/a     Return only lists created before this time
+page      integer  1       A page of 20 lists. Defaults to 1.
+from_date datetime n/a     Return only lists modified after this time
+to_date   datetime n/a     Return only lists modified before this time
 depth     integer  0       0=titles/description/uri/added; 1=Includes products
 ========= ======== ======= ======================================================
 
@@ -70,7 +70,7 @@ Example Depth 0
             "title": "My wishlist", 
             "description": "I want all this stuff. And so much more!"
             "url": "http://consumernotebook.com/lists/pydanny/my-wishlist/",
-            "added": "2012-2-15 11:2:55", 
+            "modified": "2012-2-15 11:2:55", 
         },
         ...
     ]
