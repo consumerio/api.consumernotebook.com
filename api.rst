@@ -10,12 +10,10 @@ Dependencies
 
 * An authenticated account.
 
-https://api.consumernotebook.com/v1/products/
-=============================================
+GET https://api.consumernotebook.com/v1/products/all/
+=====================================================
 
-Returns all products in the user"s account, ordered by when they were last modified.
-
-**Method**: GET
+Returns all products in the authenticated user's account, ordered by when they were last modified.
 
 ========= ======== ======================================================
 Argument  Type     
@@ -42,13 +40,10 @@ Example
         ...
     ]
 
-https://api.consumernotebook.com/v1/lists/
-==========================================
-    
+GET https://api.consumernotebook.com/v1/lists/all/
+==================================================
 
-Returns lists from a user"s account.
-
-**Method**: GET
+Returns all lists in the authenticated user's account.
 
 ========= ======== ======= ======================================================
 Argument  Type     Default 
@@ -59,7 +54,7 @@ to_date   datetime n/a     Return only lists modified before this time
 depth     integer  0       0=titles/description/uri/added; 1=Includes products
 ========= ======== ======= ======================================================
 
-Example Depth 0
+Example using depth=0
 ------------------------
 
 .. sourcecode:: javascript
@@ -71,6 +66,35 @@ Example Depth 0
             "description": "I want all this stuff. And so much more!"
             "url": "http://consumernotebook.com/lists/pydanny/my-wishlist/",
             "modified": "2012-2-15 11:2:55", 
+        },
+        ...
+    ]
+
+Example using depth=1
+------------------------
+
+.. sourcecode:: javascript
+
+    // GET https://api.consumernotebook.com/v1/lists/all/
+    [
+        {
+            "title": "Carpal Tunnel / RSI Relief Products", 
+            "description": "A list of useful products for people with carpal tunnel/RSI."
+            "url": "http://consumernotebook.com/lists/pydanny/my-wishlist/",
+            "modified": "2012-2-15 11:20:55", 
+            "products": [
+                {
+                    "title": "The Hand Reflexology Massager by Hammacher Schlemmer",
+                    "comment": "You put your hand in the device, press a button, and let it massage your hand for 15 minutes.",
+                    "modified": "2012-2-15 11:20:55"
+                },
+                {
+                    "title": "The Hand Fitness Trainer by Hammacher Schlemmer",
+                    "comment": "Helps you exercise those little, hard-to-exercise hand muscles.",
+                    "modified": "2012-2-15 09:21:23"
+                },
+                ...
+            ]
         },
         ...
     ]
