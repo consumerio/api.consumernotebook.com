@@ -10,7 +10,7 @@ Dependencies
 
 * An authenticated account.
 
-GET https://api.consumernotebook.com/v1/products/all/
+GET https://consumernotebook.com/api/v1/products/all/
 =====================================================
 
 Returns all products in the authenticated user's account, ordered by when they were last modified.
@@ -28,19 +28,19 @@ Example
 
 .. sourcecode:: javascript
 
-    // GET https://api.consumernotebook.com/v1/products/all/
+    // GET https://api.consumernotebook.com/api/v1/products/all/
     [
         {
             "title": "Stella McCartney womens paisley ash metallic tank top 34", 
-            "purchase_url": "http://amzn.com/B005SWMIQO/",
-            "modified": "2012-2-15 11:2:55", 
             "url": "http://consumernotebook.com/lists/stella-mccartney-womens-paisley-ash-metallic-tank-top-34/4f3c015febae260004000000/",
             "image_url": "http://ecx.images-amazon.com/images/I/41FgviU3O8L._SL160_.jpg", 
+            "external_url": "http://amzn.com/B005SWMIQO/",
+            "modified": "2012-2-15 11:2:55"
         },
         ...
     ]
 
-GET https://api.consumernotebook.com/v1/lists/all/
+GET https://consumernotebook.com/api/v1/lists/all/
 ==================================================
 
 Returns all lists in the authenticated user's account.
@@ -59,7 +59,7 @@ Example using depth=0
 
 .. sourcecode:: javascript
 
-    // GET https://api.consumernotebook.com/v1/lists/all/
+    // GET https://consumernotebook.com/api/v1/lists/all/
     [
         {
             "title": "My wishlist", 
@@ -75,7 +75,7 @@ Example using depth=1
 
 .. sourcecode:: javascript
 
-    // GET https://api.consumernotebook.com/v1/lists/all/
+    // GET https://consumernotebook.com/api/v1/lists/all/
     [
         {
             "title": "Carpal Tunnel / RSI Relief Products", 
@@ -86,12 +86,16 @@ Example using depth=1
                 {
                     "title": "The Hand Reflexology Massager by Hammacher Schlemmer",
                     "comment": "You put your hand in the device, press a button, and let it massage your hand for 15 minutes.",
-                    "modified": "2012-2-15 11:20:55"
+                    "modified": "2012-2-15 11:20:55",
+                    "url": "http://consumernotebook.com/the-hand-reflexology-massager-by-hammacher-schlemmer/4f41fc06758920000a000004/",
+                    "external_url": "http://go.redirectingat.com/?id=26908X855841&xs=1&url=http%3A//www.hammacher.com/Product/Default.aspx%3Fsku%3D81569%26refsku%3D76527%26xsp%3D3%26promo%3Dxsells"
                 },
                 {
                     "title": "The Hand Fitness Trainer by Hammacher Schlemmer",
                     "comment": "Helps you exercise those little, hard-to-exercise hand muscles.",
                     "modified": "2012-2-15 09:21:23"
+                    "url": "http://consumernotebook.com/the-hand-fitness-trainer-by-hammacher-schlemmer/4f41fc2ae7615d000b000004/",
+                    "external_url": "http://go.redirectingat.com/?id=26908X855841&xs=1&url=http%3A//www.hammacher.com/Product/Default.aspx%3Fsku%3D76527%26promo%3DSports-Leisure-Art-Music%26catid%3D227"
                 },
                 ...
             ]
