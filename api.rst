@@ -11,19 +11,20 @@ Dependencies
 * An authenticated account.
 * A Consumer Notebook API Key
 
-GET https://consumernotebook.com/api/v1/products/all/
+GET https://consumernotebook.com/api/v1/products/
 =====================================================
 
 Returns all products in the authenticated user's account, ordered by when they were last modified.
 
-========= ======== ======================================================
-Argument  Type     
-========= ======== ======================================================
+========= ======== ======== ======================================================
+Argument  Type     Default  Note
+========= ======== ======== ======================================================
 api_key   string   Required
-page      integer  A page of 20 Products. Defaults to 1.
-from_date datetime Return only products modified after this time
-to_date   datetime Return only products modified before this time
-========= ======== ======================================================
+username  string   Required
+page      integer  1        A page of 20 Products. Defaults to 1.
+from_date datetime n/a      Return only products modified after this time
+to_date   datetime n/a      Return only products modified before this time
+========= ======== ======= ======================================================
 
 Example
 --------
@@ -42,7 +43,7 @@ Example
         ...
     ]
 
-GET https://consumernotebook.com/api/v1/lists/all/
+GET https://consumernotebook.com/api/v1/lists/
 ==================================================
 
 Returns all lists in the authenticated user's account.
@@ -51,6 +52,7 @@ Returns all lists in the authenticated user's account.
 Argument  Type     Default 
 ========= ======== ======= ======================================================
 api_key   string   n/a     Required
+username  string   n/a     Required
 page      integer  1       A page of 20 lists. Defaults to 1.
 from_date datetime n/a     Return only lists modified after this time
 to_date   datetime n/a     Return only lists modified before this time
@@ -62,7 +64,7 @@ Example using depth=0
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/lists/all/?api_key=MYAPIKEY
+    // GET https://consumernotebook.com/api/v1/lists/?api_key=MYAPIKEY
     [
         {
             "title": "My wishlist", 
@@ -78,7 +80,7 @@ Example using depth=1
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/lists/all/??api_key=MYAPIKEY&depth=1
+    // GET https://consumernotebook.com/api/v1/lists/?api_key=MYAPIKEY&depth=1
     [
         {
             "title": "Carpal Tunnel / RSI Relief Products", 
@@ -102,6 +104,38 @@ Example using depth=1
                 },
                 ...
             ]
+        },
+        ...
+    ]
+
+GET https://consumernotebook.com/api/v1/grids/
+==================================================
+
+Returns all lists in the authenticated user's account.
+
+========= ======== ======= ======================================================
+Argument  Type     Default 
+========= ======== ======= ======================================================
+api_key   string   n/a     Required
+username  string   n/a     Required
+page      integer  1       A page of 20 grids. Defaults to 1.
+from_date datetime n/a     Return only grids modified after this time
+to_date   datetime n/a     Return only grids modified before this time
+depth     integer  0       0=titles/description/uri/added; 1=Includes products
+========= ======== ======= ======================================================
+
+Example using depth=0
+------------------------
+
+.. sourcecode:: javascript
+
+    // GET https://consumernotebook.com/api/v1/grids/?api_key=MYAPIKEY
+    [
+        {
+            "title": "My favorite comparison", 
+            "description": "These things need to be compared"
+            "url": "http://consumernotebook.com/grids/pydanny/my-favorite-comparison/",
+            "modified": "2012-2-15 11:2:55", 
         },
         ...
     ]
