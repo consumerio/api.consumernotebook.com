@@ -139,3 +139,23 @@ Example using depth=0
         },
         ...
     ]
+
+Example using depth=0
+------------------------
+
+.. sourcecode:: javascript
+
+    // GET https://consumernotebook.com/api/v1/grids/?api_key=MYAPIKEY&depth=1
+    [
+        {
+            "title": "My favorite comparison", 
+            "description": "These things need to be compared"
+            "url": "http://consumernotebook.com/grids/pydanny/my-favorite-comparison/",
+            "modified": "2012-2-15 11:2:55", 
+            "products":
+                [
+                    TODO
+                ]
+        },
+        ...
+    ]
