@@ -75,7 +75,7 @@ Example using depth=1
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/lists/all/
+    // GET https://consumernotebook.com/api/v1/lists/all/?depth=1
     [
         {
             "title": "Carpal Tunnel / RSI Relief Products", 
