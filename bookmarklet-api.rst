@@ -1,5 +1,5 @@
 ===============
-Basic Add Product
+Bookmarklet API
 ===============
 
 This is what receives the results of the Consumer Notebook bookmarklet. 
