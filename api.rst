@@ -9,7 +9,9 @@ Dependencies
 ============
 
 * An authenticated account.
-* A Consumer Notebook API Key
+* A Consumer Notebook API Key. If you don't have one, `please request an API Key`_.
+
+.. _`please request an API Key`: http://consumernotebook.com/request-api-key/
 
 GET https://consumernotebook.com/api/v1/products/
 =====================================================
