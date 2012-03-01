@@ -26,7 +26,7 @@ Our intention is to provide a number of libraries to aid users in use of API V1.
 GET https://consumernotebook.com/api/v1/products/
 =====================================================
 
-Returns all products in the authenticated user's account, ordered by when they were last modified.
+Returns all products in the specified user's account, ordered by when they were last modified.
 
 ========= ======== ======== ================================================================
 Argument  Type     Default  Note
@@ -61,7 +61,7 @@ Examples using depths 1, 2, and 3 forthcoming
 GET https://consumernotebook.com/api/v1/lists/
 ==================================================
 
-Returns all lists in the authenticated user's account.
+Returns all lists in the specified user's account.
 
 ========= ======== ======= ===========================================================
 Argument  Type     Default 
@@ -126,7 +126,7 @@ Example using depth=1
 GET https://consumernotebook.com/api/v1/grids/
 ==================================================
 
-Returns all lists in the authenticated user's account.
+Returns all grids in the specified user's account.
 
 ========= ======== ======= ==========================================================
 Argument  Type     Default 
@@ -155,7 +155,7 @@ Example using depth=0
         ...
     ]
 
-Example using depth=0
+Example using depth=1
 ------------------------
 
 .. sourcecode:: javascript
