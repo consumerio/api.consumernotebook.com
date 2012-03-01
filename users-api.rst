@@ -20,37 +20,34 @@ Example using depth 0
 .. sourcecode:: javascript
 
     // GET https://api.consumernotebook.com/api/v1/users.json?api_key=YOURKEYHERE&username=pydanny
-    [
-        {
-            "username": "pydanny", 
-            "fullname": "Daniel Greenfeld",
-            "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/pydanny/resized/80/avatars/pydanny/daniel.greenfeld.jpg" 
-            "badges": ["wisher", "contributor", "beta", "inventory-taker"],
-            "joined": "2011-11-12 19:16:55",
-            "twitter": "pydanny",
-            "facebook": "daniel.greenfeld",
-            "points": 673,
-            "coins": 112,
-            "following": ["audreyr", "knockycode", ...],            
-            "followers": ["audreyr", "knockycode", ...],
-            "grids": [
-                {
-                    "title": "My favorite comparison", 
-                    "description": "These things need to be compared"
-                    "url": "http://consumernotebook.com/grids/pydanny/my-favorite-comparison/",
-                    "modified": "2012-2-15 11:2:55", 
-                },
-                ...
-            ]
-            "lists": [
-                {
-                    "title": "My wishlist", 
-                    "description": "I want all this stuff. And so much more!"
-                    "url": "http://consumernotebook.com/lists/pydanny/my-wishlist/",
-                    "modified": "2012-2-15 11:2:55", 
-                },
-                ...
-            ]
-        },
-        ...
-    ]
+    {
+        "username": "pydanny", 
+        "fullname": "Daniel Greenfeld",
+        "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/pydanny/resized/80/avatars/pydanny/daniel.greenfeld.jpg" 
+        "badges": ["wisher", "contributor", "beta", "inventory-taker"],
+        "joined": "2011-11-12 19:16:55",
+        "twitter": "pydanny",
+        "facebook": "daniel.greenfeld",
+        "points": 673,
+        "coins": 112,
+        "following": ["audreyr", "knockycode", ...],            
+        "followers": ["audreyr", "knockycode", ...],
+        "grids": [
+            {
+                "title": "My favorite comparison", 
+                "description": "These things need to be compared"
+                "url": "http://consumernotebook.com/grids/pydanny/my-favorite-comparison/",
+                "modified": "2012-2-15 11:2:55", 
+            },
+            ...
+        ]
+        "lists": [
+            {
+                "title": "My wishlist", 
+                "description": "I want all this stuff. And so much more!"
+                "url": "http://consumernotebook.com/lists/pydanny/my-wishlist/",
+                "modified": "2012-2-15 11:2:55", 
+            },
+            ...
+        ]
+    }
