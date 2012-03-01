@@ -27,4 +27,5 @@ Then explore our REST API:
    products-api
    lists-api
    grids-api
+   users-api
    bookmarklet-api
