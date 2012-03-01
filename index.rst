@@ -16,14 +16,3 @@ Contents:
    license
    basic-add-product
    api
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
