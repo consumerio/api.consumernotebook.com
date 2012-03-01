@@ -13,7 +13,7 @@ Dependencies
 Authentication
 ==============
 
-All API calls require HTTP basic authentication and an API key::
+All API calls require HTTPS basic authentication and an API key::
 
     $ curl -u "username:PASSWORD" https://consumernotebook.com/api/v1/products.json?api_key=MYAPIKEY
 

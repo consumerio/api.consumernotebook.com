@@ -2,8 +2,8 @@
 Grids API
 =========
 
-GET https://consumernotebook.com/api/v1/grids.json
-==================================================
+GET /api/v1/grids.json
+======================
 
 Returns all grids in the specified user's account.
 
