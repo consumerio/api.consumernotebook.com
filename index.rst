@@ -1,5 +1,7 @@
-Welcome to Consumer Notebook's API documentation!
-====================================================
+Consumer Notebook API Documentation
+===================================
+
+Welcome!  Also see the Consumer Notebook Developer Center (developers.consumernotebook.com_) for our graphic identity kit, featured projects, and much more.
 
 Features:
 
@@ -13,7 +15,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   license
    basic-add-product
    api
 
@@ -27,3 +28,4 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+.. _developers.consumernotebook.com: http://developers.consumernotebook.com
