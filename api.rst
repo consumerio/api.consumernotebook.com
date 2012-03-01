@@ -24,10 +24,11 @@ username  string   <yours>  Returns products interacted with username. Defaults 
 page      integer  1        A page of 20 Products. Defaults to 1.
 from_date datetime n/a      Return only products modified after this time
 to_date   datetime n/a      Return only products modified before this time
+depth     integer  0        0=basic data;1=adds grids;2=adds lists;3=adds lists/grids
 ========= ======== ======== ================================================================
 
-Example
---------
+Example using depth 0
+----------------------
 
 .. sourcecode:: javascript
 
@@ -42,6 +43,8 @@ Example
         },
         ...
     ]
+    
+Examples using depths 1, 2, and 3 forthcoming
 
 GET https://consumernotebook.com/api/v1/lists/
 ==================================================
