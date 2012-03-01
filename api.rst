@@ -16,15 +16,15 @@ GET https://consumernotebook.com/api/v1/products/
 
 Returns all products in the authenticated user's account, ordered by when they were last modified.
 
-========= ======== ======== ======================================================
+========= ======== ======== ================================================================
 Argument  Type     Default  Note
-========= ======== ======== ======================================================
+========= ======== ======== ================================================================
 api_key   string   Required
-username  string   Required
+username  string   <yours>  Returns products interacted with username. Defaults to your own. 
 page      integer  1        A page of 20 Products. Defaults to 1.
 from_date datetime n/a      Return only products modified after this time
 to_date   datetime n/a      Return only products modified before this time
-========= ======== ======= ======================================================
+========= ======== ======== ================================================================
 
 Example
 --------
@@ -48,16 +48,16 @@ GET https://consumernotebook.com/api/v1/lists/
 
 Returns all lists in the authenticated user's account.
 
-========= ======== ======= ======================================================
+========= ======== ======= ===========================================================
 Argument  Type     Default 
-========= ======== ======= ======================================================
+========= ======== ======= ===========================================================
 api_key   string   n/a     Required
-username  string   n/a     Required
+username  string   <yours> Returns grids belonging to username. Defaults to your own. 
 page      integer  1       A page of 20 lists. Defaults to 1.
 from_date datetime n/a     Return only lists modified after this time
 to_date   datetime n/a     Return only lists modified before this time
 depth     integer  0       0=titles/description/uri/added; 1=Includes products
-========= ======== ======= ======================================================
+========= ======== ======= ===========================================================
 
 Example using depth=0
 ------------------------
@@ -113,16 +113,16 @@ GET https://consumernotebook.com/api/v1/grids/
 
 Returns all lists in the authenticated user's account.
 
-========= ======== ======= ======================================================
+========= ======== ======= ==========================================================
 Argument  Type     Default 
-========= ======== ======= ======================================================
+========= ======== ======= ==========================================================
 api_key   string   n/a     Required
-username  string   n/a     Required
+username  string   <yours> Returns lists belonging to username. Defaults to your own.
 page      integer  1       A page of 20 grids. Defaults to 1.
 from_date datetime n/a     Return only grids modified after this time
 to_date   datetime n/a     Return only grids modified before this time
 depth     integer  0       0=titles/description/uri/added; 1=Includes products
-========= ======== ======= ======================================================
+========= ======== ======= ==========================================================
 
 Example using depth=0
 ------------------------
