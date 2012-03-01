@@ -2,7 +2,7 @@
 Users API
 ============
 
-GET /api/v1/users.json/
+GET /api/v1/users.json
 =====================================================
 
 Returns information for a specified user's account.
@@ -12,6 +12,7 @@ Argument  Type     Default  Note
 ========= ======== ======== ================================================================
 api_key   string   Required
 username  string   <yours>  Returns data on the specified username. Defaults to your own. 
+search    string   
 ========= ======== ======== ================================================================
 
 Example using depth 0
@@ -51,3 +52,22 @@ Example using depth 0
             ...
         ]
     }
+    
+POST /api/v1/users/follow/
+==========================
+
+Your account will follow the specified username.
+
+========= ======== ======== ===============================
+Argument  Type     Default  Note
+========= ======== ======== ===============================
+api_key   string   Required
+username  string   Required Follow another person's account
+========= ======== ======== ===============================
+
+Example using depth 0
+----------------------
+
+.. parsed-literal::
+
+    // POST https://api.consumernotebook.com/api/v1/users/follow/
