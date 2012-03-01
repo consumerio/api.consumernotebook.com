@@ -2,7 +2,7 @@
 Users API
 ============
 
-GET https://consumernotebook.com/api/v1/users.json/
+GET /api/v1/users.json/
 =====================================================
 
 Returns information for a specified user's account.
