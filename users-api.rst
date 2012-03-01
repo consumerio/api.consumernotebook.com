@@ -15,8 +15,8 @@ username  string   <yours>  Returns data on the specified username. Defaults to 
 search    string   
 ========= ======== ======== ================================================================
 
-Example using depth 0
-----------------------
+Example
+-------
 
 .. sourcecode:: javascript
 

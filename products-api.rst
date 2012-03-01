@@ -35,7 +35,7 @@ Here we use the default depth argument, which is 0.
 
 .. sourcecode:: javascript
 
-    // GET https://api.consumernotebook.com/api/v1/products.json?api_key=MYAPIKEY
+    // GET https://consumernotebook.com/api/v1/products.json?api_key=MYAPIKEY
     [
         {
             "title": "Stella McCartney womens paisley ash metallic tank top 34", 
