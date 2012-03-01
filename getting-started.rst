@@ -10,15 +10,24 @@ Dependencies
 
 .. _`please request an API Key`: http://consumernotebook.com/request-api-key/
 
+Authentication
+==============
+
+All API calls require HTTP basic authentication and an API key::
+
+    $ curl -u "username:PASSWORD" https://consumernotebook.com/api/v1/products.json?api_key=MYAPIKEY
+
 Client Libraries
 ================
 
-Our intention is to provide a number of libraries to aid users in use of API V1.
+So far there's just a simple Python client library.  If you write a library for another language (or another Python client library for that matter), let us know and we'll link/credit you here.
 
-* Python_ (alpha)
+Python:
 
-.. _Python: https://github.com/consumernotebook/python-cn-client
+* python-cn-client_ (alpha) -- by `Daniel Greenfeld`_
 
+.. _python-cn-client: https://github.com/consumernotebook/python-cn-client
+.. _`Daniel Greenfeld`: http://pydanny.com
 
 
 

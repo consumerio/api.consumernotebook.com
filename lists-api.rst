@@ -2,8 +2,8 @@
 Lists API
 =========
 
-GET https://consumernotebook.com/api/v1/lists/
-==================================================
+GET /api/v1/lists.json
+======================
 
 Returns all lists in the specified user's account.
 
@@ -23,7 +23,7 @@ Example using depth=0
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/lists/?api_key=MYAPIKEY
+    // GET https://consumernotebook.com/api/v1/lists.json?api_key=MYAPIKEY
     [
         {
             "title": "My wishlist", 
@@ -39,7 +39,7 @@ Example using depth=1
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/lists/?api_key=MYAPIKEY&depth=1
+    // GET https://consumernotebook.com/api/v1/lists.json?api_key=MYAPIKEY&depth=1
     [
         {
             "title": "Carpal Tunnel / RSI Relief Products", 

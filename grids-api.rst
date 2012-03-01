@@ -2,7 +2,7 @@
 Grids API
 =========
 
-GET https://consumernotebook.com/api/v1/grids/
+GET https://consumernotebook.com/api/v1/grids.json
 ==================================================
 
 Returns all grids in the specified user's account.
@@ -23,7 +23,7 @@ Example using depth=0
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/grids/?api_key=MYAPIKEY
+    // GET https://consumernotebook.com/api/v1/grids.json?api_key=MYAPIKEY
     [
         {
             "title": "My favorite comparison", 
@@ -39,7 +39,7 @@ Example using depth=1
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/grids/?api_key=MYAPIKEY&depth=1
+    // GET https://consumernotebook.com/api/v1/grids.json?api_key=MYAPIKEY&depth=1
     [
         {
             "title": "My favorite comparison", 

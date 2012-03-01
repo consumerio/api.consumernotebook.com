@@ -2,10 +2,20 @@
 Products API
 ============
 
-GET https://consumernotebook.com/api/v1/products/
-=====================================================
+With the Products API, you can get products that you or other users have bookmarked on Consumer Notebook.
+
+GET /api/v1/products.json
+=========================
 
 Returns all products in the specified user's account, ordered by when they were last modified.
+
+Authentication
+--------------
+
+This method requires authentication.
+
+Arguments
+---------
 
 ========= ======== ======== ================================================================
 Argument  Type     Default  Note
@@ -18,12 +28,14 @@ to_date   datetime n/a      Return only products modified before this time
 depth     integer  0        0=basic data;1=adds grids;2=adds lists;3=adds lists/grids
 ========= ======== ======== ================================================================
 
-Example using depth 0
-----------------------
+Example 1
+---------
+
+Here we use the default depth argument, which is 0.
 
 .. sourcecode:: javascript
 
-    // GET https://api.consumernotebook.com/api/v1/products/all/?api_key=MYAPIKEY
+    // GET https://api.consumernotebook.com/api/v1/products.json?api_key=MYAPIKEY
     [
         {
             "title": "Stella McCartney womens paisley ash metallic tank top 34", 
