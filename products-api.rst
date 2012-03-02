@@ -48,3 +48,28 @@ Here we use the default depth argument, which is 0.
     ]
     
 Examples using depths 1, 2, and 3 forthcoming
+
+POST/api/v1/products/add/list/
+==============================
+
+TODO
+
+POST/api/v1/products/delete/list/
+=================================
+
+TODO
+
+POST/api/v1/products/add/grid/
+==============================
+
+TODO
+
+POST/api/v1/products/delete/grid/
+=================================
+
+TODO
+
+POST/api/v1/products/add/
+==============================
+
+TODO

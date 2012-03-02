@@ -71,3 +71,31 @@ Example using depth 0
 .. parsed-literal::
 
     // POST https://api.consumernotebook.com/api/v1/users/follow/
+    
+Returns::
+
+    HTTP 201 If successful
+    HTTP 400 if the user is already being followed
+    
+POST /api/v1/users/unfollow/
+=============================
+
+Your account will unfollow the specified username.
+
+========= ======== ======== =================================
+Argument  Type     Default  Note
+========= ======== ======== =================================
+api_key   string   Required
+username  string   Required UnFollow another person's account
+========= ======== ======== =================================
+
+Example using depth 0
+----------------------
+
+.. parsed-literal::
+
+    // POST https://api.consumernotebook.com/api/v1/users/unfollow/
+
+Returns::
+
+    HTTP 202 If successfully unfollowed
