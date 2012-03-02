@@ -24,8 +24,10 @@ Then explore our REST API:
 .. toctree::
    :maxdepth: 2
 
+   api-wide
    products-api
    lists-api
    grids-api
    users-api
    bookmarklet-api
+
