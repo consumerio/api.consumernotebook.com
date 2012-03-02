@@ -66,3 +66,13 @@ Example using depth=1
         },
         ...
     ]
+    
+POST/api/v1/lists/create/
+=========================
+
+TODO
+
+POST/api/v1/lists/delete/
+=========================
+
+TODO
