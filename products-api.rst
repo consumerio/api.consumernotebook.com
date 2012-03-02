@@ -9,11 +9,6 @@ GET /api/v1/products.json
 
 Returns all products in the specified user's account, ordered by when they were last modified.
 
-Authentication
---------------
-
-This method requires authentication.
-
 Arguments
 ---------
 
@@ -49,27 +44,40 @@ Here we use the default depth argument, which is 0.
     
 Examples using depths 1, 2, and 3 forthcoming
 
-POST/api/v1/products/add/list/
+POST /api/v1/products/add/
 ==============================
 
-TODO
+Adds a products. TODO - add to grids/lists
 
-POST/api/v1/products/delete/list/
-=================================
+Arguments
+---------
 
-TODO
+============= ======== ======== =======================================================
+Argument      Type     Default  Note
+============= ======== ======== =======================================================
+api_key       string   Required
+title         string   Required Max length 100 characters
+image_url     string   Required 
+price_average datetime n/a      The price of the product - does not have to be precise.
+============= ======== ======== =======================================================
 
-POST/api/v1/products/add/grid/
-==============================
-
-TODO
-
-POST/api/v1/products/delete/grid/
-=================================
-
-TODO
-
-POST/api/v1/products/add/
-==============================
+POST /api/v1/products/add/list/
+===============================
 
 TODO
+
+POST /api/v1/products/delete/list/
+==================================
+
+TODO
+
+POST /api/v1/products/add/grid/
+===============================
+
+TODO
+
+POST /api/v1/products/delete/grid/
+==================================
+
+TODO
+

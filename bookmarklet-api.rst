@@ -28,13 +28,14 @@ Parameters
 
 All of the following are required and must be URLEncoded.
 
-========= ======== ======================================================
-Name      Required Note
-========= ======== ======================================================
-title     Yes      The name of the product being added
-url       Yes      The product URL, or where it is found on the Internet.
-image_url Yes      The image used to display the product.
-========= ======== ======================================================
+============= ======== =======================================================
+Name          Required Note
+============= ======== =======================================================
+title         Yes      The name of the product being added
+url           Yes      The product URL, or where it is found on the Internet.
+image_url     Yes      The image used to display the product.
+price_average Yes      The price of the product - does not have to be precise.
+============= ======== =======================================================
 
 Example
 =======
