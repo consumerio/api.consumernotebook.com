@@ -56,10 +56,17 @@ Arguments
 Argument      Type     Default  Note
 ============= ======== ======== =======================================================
 api_key       string   Required
-title         string   Required Max length 100 characters
+title         string   Required Max length 100 characters.
 image_url     string   Required 
 price_average datetime n/a      The price of the product - does not have to be precise.
+lists         TODO     TODO     TODO
+grids         TODO     TODO     TODO
 ============= ======== ======== =======================================================
+
+Returns::
+
+    HTTP 201 If you are the first user to add this product to Consumer Notebook.
+    HTTP 202 If you are just adding it to your own lists or grids.
 
 POST /api/v1/products/add/list/
 ===============================
