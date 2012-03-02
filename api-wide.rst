@@ -2,6 +2,9 @@
 API Wide
 ==========
 
+To confirm that you have the most recent documentation, it is suggested that
+you validate your code against the following:
+
 .. sourcecode:: json
 
     // curl https://consumernotebok.com/api/v1/
