@@ -59,8 +59,8 @@ api_key       string   Required
 title         string   Required Max length 100 characters.
 image_url     string   Required 
 price_average datetime n/a      The price of the product - does not have to be precise.
-lists         TODO     TODO     TODO
-grids         TODO     TODO     TODO
+list          TODO     TODO     TODO
+grid          TODO     TODO     TODO
 ============= ======== ======== =======================================================
 
 Returns::
