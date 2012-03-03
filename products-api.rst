@@ -9,7 +9,7 @@ GET /api/v1/products/
 
 .. sourcecode:: javascript
 
-    //  curl --user username:password  https://consumernotebook.com/api/v1/products/
+    //  curl --user username:password https://consumernotebook.com/api/v1/products/
     
     {
         "meta": {
@@ -40,8 +40,25 @@ GET /api/v1/products/
             },
             ...
         ]
-    }            
+    }         
+    
+GET /api/v1/products/<pk>/
+===========================
 
+Get a product by it's Consumer Notebook pk.
+
+.. sourcecode:: javascript
+
+    // curl --user username:password /api/v1/products/4f3c0161ebae26000400000d/
+    {
+        "creator": "pydanny",
+        "image_url": "http://ecx.images-amazon.com/images/I/51UmKMROcNL.jpg",
+        "pk": "4f3c0161ebae26000400000d",
+        "price_range": "Coming",
+        "resource_uri": "/api/v1/products/4f3c0161ebae26000400000d/",
+        "title": "Forbidden Island",
+        "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B003D7F4YY"
+    }
 
 GET /api/v1/products/schema/
 =============================
