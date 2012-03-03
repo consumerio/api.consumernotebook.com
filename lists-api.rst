@@ -7,7 +7,7 @@ GET /api/v1/lists/<list_id>/
 
 .. sourcecode:: javascript
 
-    //  curl --user username:password http://localhost:8000/api/v1/lists/500/
+    //  curl --user username:password http://consumernotebook.com/api/v1/lists/500/
     {
         "created": "2012-02-25T13:24:39.212716",
         "description": "",
@@ -64,6 +64,7 @@ GET /api/v1/lists/schema/
 
 .. sourcecode:: javascript
 
+    //  curl --user username:password http://consumernotebook.com/api/v1/lists/schema/
     {
         "allowed_detail_http_methods": ["get"],
         "allowed_list_http_methods": ["get"],
