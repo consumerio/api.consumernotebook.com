@@ -2,6 +2,86 @@
 Lists API
 =========
 
+GET /api/v1/lists/
+==================
+
+.. sourcecode:: javascript
+
+    {
+        "meta": {
+            "limit": 20,
+            "next": "/api/v1/lists/?limit=20&offset=20",
+            "offset": 0,
+            "previous": null,
+            "total_count": 218
+        },
+        "objects": [{
+            "created": "2012-02-27T15:44:27.145068",
+            "description": "",
+            "id": "509",
+            "last_modified_by_user": "2012-02-27T12:53:12.956102",
+            "modified": "2012-02-27T15:44:27.150332",
+            "products": [{
+                "created": "2012-02-27T15:44:27.451160",
+                "modified": "2012-02-27T15:44:27.494423",
+                "order": 0,
+                "product": {
+                    "_id": "4f4c155b02be66000e000002",
+                    "creator": "audreyr",
+                    "image_url": "http://ecx.images-amazon.com/images/I/31O2AS6XdAL.jpg",
+                    "title": "100% Pure Unrefined Organic Raw Shea Butter (1 Pound)",
+                    "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B004YBW5T0"
+                },
+                "reason": "Real butter is best!",
+                "resource_uri": ""
+            }],
+            "profile": {
+                "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/audreyr/resized/80/avatars/audreyr/audreyr.jpg",
+                "coins": 149,
+                "fullname": "Audrey M. Roy",
+                "score": 978,
+                "username": "audreyr",
+                "waitlisted": false
+            },
+            "resource_uri": "/api/v1/lists/509/",
+            "slug": "raw-ingredients",
+            "title": "Raw Ingredients"
+        },
+        {
+            "created": "2012-02-27T14:04:27.531537",
+            "description": "I went to the Beverly Hills Wine Festival on February 26. Here are the wines I really liked.",
+            "id": "508",
+            "last_modified_by_user": "2012-02-27T14:23:37.782213",
+            "modified": "2012-02-27T14:23:37.801999",
+            "products": [{
+                "created": "2012-02-27T14:04:27.870567",
+                "modified": "2012-02-27T14:28:13.192584",
+                "order": 0,
+                "product": {
+                    "_id": "4f4bfdeb776e5e000e000001",
+                    "creator": "audreyr",
+                    "image_url": "http://blueplatewines.com/wp-content/uploads/2011/03/bottle.png",
+                    "title": "2010 Blue Plate Clarksburg Chenin Blanc",
+                    "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//blueplatewines.com/"
+                },
+                "reason": "One of those complex multi-stage flavor wines, with hints of papaya.",
+                "resource_uri": ""
+            }],
+            "profile": {
+                "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/audreyr/resized/80/avatars/audreyr/audreyr.jpg",
+                "coins": 149,
+                "fullname": "Audrey M. Roy",
+                "score": 978,
+                "username": "audreyr",
+                "waitlisted": false
+            },
+            "resource_uri": "/api/v1/lists/508/",
+            "slug": "wines-i-liked-at-the-beverly-hills-wine-festival",
+            "title": "Wines I Liked at the Beverly Hills Wine Festival"
+        },
+        ...
+    }]
+
 GET /api/v1/lists/<list_id>/
 ============================
 
