@@ -33,7 +33,7 @@ GET /api/v1/lists/
                     "creator": "audreyr",
                     "image_url": "http://ecx.images-amazon.com/images/I/31O2AS6XdAL.jpg",
                     "title": "100% Pure Unrefined Organic Raw Shea Butter (1 Pound)",
-                    "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B004YBW5T0"
+                    "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B004YBW5T0"
                 },
                 "reason": "Real butter is best!",
                 "resource_uri": ""
@@ -65,7 +65,7 @@ GET /api/v1/lists/
                     "creator": "audreyr",
                     "image_url": "http://blueplatewines.com/wp-content/uploads/2011/03/bottle.png",
                     "title": "2010 Blue Plate Clarksburg Chenin Blanc",
-                    "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//blueplatewines.com/"
+                    "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//blueplatewines.com/"
                 },
                 "reason": "One of those complex multi-stage flavor wines, with hints of papaya.",
                 "resource_uri": ""
@@ -118,7 +118,7 @@ GET /api/v1/lists/<list_id>/
                     "creator": "pydanny",
                     "image_url": "http://ecx.images-amazon.com/images/I/31lvjvwfwxL.jpg",
                     "title": "PlayStation Vita Travel Pouch",
-                    "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B006PP41Q8"
+                    "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B006PP41Q8"
                 },
                 "reason": "I want to protect my favorite game device.",
                 "resource_uri": ""
@@ -132,7 +132,7 @@ GET /api/v1/lists/<list_id>/
                     "creator": "pydanny",
                     "image_url": "http://ecx.images-amazon.com/images/I/61UdIS4QRTL.jpg",
                     "title": "Rayman Origins: playstation vita: Video Games",
-                    "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B006WJ6YH6"
+                    "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B006WJ6YH6"
                 },
                 "reason": "Looks like fun!",
                 "resource_uri": ""

@@ -27,7 +27,7 @@ GET /api/v1/products/
                 "price_range": "Coming",
                 "resource_uri": "/api/v1/products/4f3c015febae260004000000/",
                 "title": "Stella McCartney womens paisley ash metallic tank top 34",
-                "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B005SWMIQO"
+                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B005SWMIQO"
             },
             {
                 "creator": "pydanny",
@@ -36,7 +36,7 @@ GET /api/v1/products/
                 "price_range": "Coming",
                 "resource_uri": "/api/v1/products/4f3c015febae260004000001/",
                 "title": "Fujifilm FinePix XP20 Green 14 MP Digital Camera with 5x Optical Zoom and 2.7-Inch LCD",
-                "url": "http://go.redirectingat.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B004JSP8A6"
+                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B004JSP8A6"
             },
             ...
         ]

@@ -2,100 +2,142 @@
 Users API
 ============
 
-GET /api/v1/users.json
-=====================================================
-
-Returns information for a specified user's account.
-
-========= ======== ======== ================================================================
-Argument  Type     Default  Note
-========= ======== ======== ================================================================
-api_key   string   Required
-username  string   <yours>  Returns data on the specified username. Defaults to your own. 
-search    string   
-========= ======== ======== ================================================================
-
-Example
--------
+GET /api/v1/users/
+==================
 
 .. sourcecode:: javascript
 
-    // GET https://api.consumernotebook.com/api/v1/users.json?api_key=YOURKEYHERE&username=pydanny
+    // curl --user username:password https://consumernotebook.com/api/v1/users/
     {
-        "username": "pydanny", 
-        "fullname": "Daniel Greenfeld",
-        "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/pydanny/resized/80/avatars/pydanny/daniel.greenfeld.jpg" 
-        "badges": ["wisher", "contributor", "beta", "inventory-taker"],
-        "joined": "2011-11-12 19:16:55",
-        "twitter": "pydanny",
-        "facebook": "daniel.greenfeld",
-        "points": 673,
-        "coins": 112,
-        "following": ["audreyr", "knockycode", ...],            
-        "followers": ["audreyr", "knockycode", ...],
-        "grids": [
-            {
-                "title": "My favorite comparison", 
-                "description": "These things need to be compared"
-                "url": "http://consumernotebook.com/grids/pydanny/my-favorite-comparison/",
-                "modified": "2012-2-15 11:2:55", 
-            },
-            ...
-        ]
-        "lists": [
-            {
-                "title": "My wishlist", 
-                "description": "I want all this stuff. And so much more!"
-                "url": "http://consumernotebook.com/lists/pydanny/my-wishlist/",
-                "modified": "2012-2-15 11:2:55", 
-            },
-            ...
-        ]
+        "meta": {
+            "limit": 20,
+            "next": "/api/v1/users/?limit=20&offset=20",
+            "offset": 0,
+            "previous": null,
+            "total_count": 335
+        },
+        "objects": [{
+            "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/adamfast/resized/80/avatars/adamfast/Adamfast.jpg",
+            "coins": 10,
+            "followers": ["pydanny", "audreyr", "webology"],
+            "following": [],
+            "fullname": "Adam Fast",
+            "resource_uri": "/api/v1/users/32/",
+            "score": 5,
+            "username": "adamfast",
+            "waitlisted": false
+        },
+        {
+            "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/andrewkornilov/resized/80/avatars/andrewkornilov/andrew.kornilov.jpg",
+            "coins": 10,
+            "followers": ["pydanny"],
+            "following": [],
+            "fullname": "Andrew Kornilov",
+            "resource_uri": "/api/v1/users/94/",
+            "score": 5,
+            "username": "andrewkornilov",
+            "waitlisted": false
+        },
+        ...
+        }]
     }
-    
-POST /api/v1/users/follow/
-==========================
 
-Your account will follow the specified username.
 
-========= ======== ======== ===============================
-Argument  Type     Default  Note
-========= ======== ======== ===============================
-api_key   string   Required
-username  string   Required Follow another person's account
-========= ======== ======== ===============================
+GET /api/v1/users/schema/
+=========================
 
-Example using depth 0
-----------------------
+.. sourcecode:: javascript
 
-.. parsed-literal::
-
-    // POST https://api.consumernotebook.com/api/v1/users/follow/
-    
-Returns::
-
-    HTTP 201 If successful
-    HTTP 400 if the user is already being followed
-    
-POST /api/v1/users/unfollow/
-=============================
-
-Your account will unfollow the specified username.
-
-========= ======== ======== =================================
-Argument  Type     Default  Note
-========= ======== ======== =================================
-api_key   string   Required
-username  string   Required UnFollow another person's account
-========= ======== ======== =================================
-
-Example using depth 0
-----------------------
-
-.. parsed-literal::
-
-    // POST https://api.consumernotebook.com/api/v1/users/unfollow/
-
-Returns::
-
-    HTTP 202 If successfully unfollowed
+    // curl --user username:password https://consumernotebook.com/api/v1/users/schema/
+    {
+        "allowed_detail_http_methods": ["get"],
+        "allowed_list_http_methods": ["get"],
+        "default_format": "application/json",
+        "default_limit": 20,
+        "fields": {
+            "avatar": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": true,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
+            "coins": {
+                "blank": false,
+                "default": 0,
+                "help_text": "Integer data. Ex: 2673",
+                "nullable": false,
+                "readonly": false,
+                "type": "integer",
+                "unique": false
+            },
+            "followers": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
+                "nullable": true,
+                "readonly": false,
+                "type": "list",
+                "unique": false
+            },
+            "following": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
+                "nullable": true,
+                "readonly": false,
+                "type": "list",
+                "unique": false
+            },
+            "fullname": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": true,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
+            "resource_uri": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": true,
+                "type": "string",
+                "unique": false
+            },
+            "score": {
+                "blank": false,
+                "default": 0,
+                "help_text": "Integer data. Ex: 2673",
+                "nullable": false,
+                "readonly": false,
+                "type": "integer",
+                "unique": false
+            },
+            "username": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": true,
+                "readonly": false,
+                "type": "string",
+                "unique": true
+            },
+            "waitlisted": {
+                "blank": false,
+                "default": true,
+                "help_text": "Boolean data. Ex: True",
+                "nullable": false,
+                "readonly": false,
+                "type": "boolean",
+                "unique": false
+            }
+        },
+        "filtering": {
+            "username": ["exact"]
+        }
+    }
