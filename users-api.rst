@@ -45,6 +45,83 @@ Get a list of users.
         ...
         }]
     }
+    
+GET /api/v1/users/?<filter>
+==========================================
+
+Users also have filters available on the ``username`` field. Filters include:
+
+* contains
+* exact
+* startswith
+
+Example with ``username__startswith=py``
+
+.. sourcecode:: javascript
+
+    // curl --user username:password https://consumernotebook.com/api/v1/users/?username__startswith=py
+    {
+        "meta": {
+            "limit": 20,
+            "next": null,
+            "offset": 0,
+            "previous": null,
+            "total_count": 3
+        },
+        "objects": [{
+            "avatar": "/media/avatars/pydanny/resized/80/avatars/pydanny/daniel.greenfeld.jpg",
+            "coins": 112,
+            "followers": ["audreyr", "eugenemechanism", "webology", ...],
+            "following": ["kennethlove", "rosalinda-roy", "kennethreitz", "natea", ...],
+            "fullname": "Daniel Greenfeld",
+            "resource_uri": "/api/v1/users/4/",
+            "score": 672,
+            "username": "pydanny",
+            "waitlisted": false
+        },
+        {
+            "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/pythondj/resized/80/avatars/pythondj/pythondj.png",
+            "coins": 0,
+            "followers": ["audreyr"],
+            "following": [],
+            "fullname": "Diane Mueller",
+            "resource_uri": "/api/v1/users/201/",
+            "score": 4,
+            "username": "pythondj",
+            "waitlisted": false
+        },
+        {
+            "avatar": "https://consumernotebook.s3.amazonaws.com/avatars/pyhoster/resized/80/avatars/pyhoster/pyhoster.gif",
+            "coins": 0,
+            "followers": [],
+            "following": [],
+            "fullname": "Vladimir",
+            "resource_uri": "/api/v1/users/222/",
+            "score": 0,
+            "username": "pyhoster",
+            "waitlisted": false
+        }]
+    }
+
+
+GET /api/v1/users/<id>/
+========================
+
+Get a user by their id
+
+.. sourcecode:: python
+
+    {
+        "avatar": "/media/avatars/pydanny/resized/80/avatars/pydanny/daniel.greenfeld.jpg",
+        "coins": 112,
+        "followers": ["audreyr", "brantsteen", "eugenemechanism", "webology", ...],
+        "following": ["kennethlove", "rosalinda-roy", "kennethreitz", "natea", ...],
+        "fullname": "Daniel Greenfeld",
+        "resource_uri": "/api/v1/users/4/",
+        "score": 672,
+        "username": "pydanny",
+        "waitlisted": false
+    }
 
 
 GET /api/v1/users/schema/
