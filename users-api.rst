@@ -2,8 +2,12 @@
 Users API
 ============
 
+This API lets you communicate and work with users objects.
+
 GET /api/v1/users/
 ==================
+
+Get a list of users.
 
 .. sourcecode:: javascript
 
@@ -45,6 +49,8 @@ GET /api/v1/users/
 
 GET /api/v1/users/schema/
 =========================
+
+Schema representation of Consumer Notebook user objects.
 
 .. sourcecode:: javascript
 
