@@ -2,11 +2,12 @@
 Lists API
 =========
 
-GET /api/v1/lists/500/
-======================
+GET /api/v1/lists/<list_id>/
+============================
 
 .. sourcecode:: javascript
 
+    //  curl --user username:password http://localhost:8000/api/v1/lists/500/
     {
         "created": "2012-02-25T13:24:39.212716",
         "description": "",
