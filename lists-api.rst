@@ -9,6 +9,7 @@ GET /api/v1/lists/
 
 .. sourcecode:: javascript
 
+    //  curl --user username:password http://consumernotebook.com/api/v1/lists/
     {
         "meta": {
             "limit": 20,
