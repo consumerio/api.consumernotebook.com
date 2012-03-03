@@ -4,87 +4,81 @@ Products API
 
 With the Products API, you can get products that you or other users have bookmarked on Consumer Notebook.
 
-GET /api/v1/products.json
+GET /api/v1/lists/schema/
 =========================
 
-Returns all products in the specified user's account, ordered by when they were last modified.
-
-Arguments
----------
-
-========= ======== ======== ================================================================
-Argument  Type     Default  Note
-========= ======== ======== ================================================================
-api_key   string   Required
-username  string   <yours>  Returns products interacted with username. Defaults to your own. 
-page      integer  1        A page of 20 Products. Defaults to 1.
-from_date datetime n/a      Return only products modified after this time
-to_date   datetime n/a      Return only products modified before this time
-depth     integer  0        0=basic data;1=adds grids;2=adds lists;3=adds lists/grids
-========= ======== ======== ================================================================
-
-Example 1
----------
-
-Here we use the default depth argument, which is 0.
+This command displays the layout of the CN REST API Product object.
 
 .. sourcecode:: javascript
 
-    // GET https://consumernotebook.com/api/v1/products.json?api_key=MYAPIKEY
-    [
-        {
-            "title": "Stella McCartney womens paisley ash metallic tank top 34", 
-            "url": "http://consumernotebook.com/lists/stella-mccartney-womens-paisley-ash-metallic-tank-top-34/4f3c015febae260004000000/",
-            "image_url": "http://ecx.images-amazon.com/images/I/41FgviU3O8L._SL160_.jpg", 
-            "external_url": "http://amzn.com/B005SWMIQO/",
-            "modified": "2012-2-15 11:2:55"
-        },
-        ...
-    ]
-    
-Examples using depths 1, 2, and 3 forthcoming
-
-POST /api/v1/products/add/
-==============================
-
-Adds a products. TODO - add to grids/lists
-
-Arguments
----------
-
-============= ======== ======== =======================================================
-Argument      Type     Default  Note
-============= ======== ======== =======================================================
-api_key       string   Required
-title         string   Required Max length 100 characters.
-image_url     string   Required 
-price_average datetime n/a      The price of the product - does not have to be precise.
-list          TODO     TODO     TODO
-grid          TODO     TODO     TODO
-============= ======== ======== =======================================================
-
-Returns::
-
-    HTTP 201 If you are the first user to add this product to Consumer Notebook.
-    HTTP 202 If you are just adding it to your own lists or grids.
-
-POST /api/v1/products/add/list/
-===============================
-
-TODO
-
-POST /api/v1/products/delete/list/
-==================================
-
-TODO
-
-POST /api/v1/products/add/grid/
-===============================
-
-TODO
-
-POST /api/v1/products/delete/grid/
-==================================
-
-TODO
-
+    {
+        "allowed_detail_http_methods": ["get"],
+        "allowed_list_http_methods": ["get"],
+        "default_format": "application/json",
+        "default_limit": 20,
+        "fields": {
+            "creator": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
+            "image_url": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
+            "pk": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
+            "price_range": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
+            "resource_uri": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": true,
+                "type": "string",
+                "unique": false
+            },
+            "title": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
+            "url": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            }
+        }
+    }

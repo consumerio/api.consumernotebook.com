@@ -2,6 +2,8 @@
 Lists API
 =========
 
+Using the lists API you can see public lists created by Consumer Notebook users.
+
 GET /api/v1/lists/
 ==================
 
@@ -141,6 +143,8 @@ GET /api/v1/lists/<list_id>/
 
 GET /api/v1/lists/schema/
 =========================
+
+This command displays the layout of the CN REST API List object.
 
 .. sourcecode:: javascript
 
