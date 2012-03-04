@@ -49,7 +49,7 @@ Get a product by it's Consumer Notebook pk.
 
 .. sourcecode:: javascript
 
-    // curl /api/v1/products/4f3c0161ebae26000400000d/?apikey={apikey}
+    // curl https://consumernotebook.com/api/v1/products/4f3c0161ebae26000400000d/?apikey={apikey}
     {
         "creator": "pydanny",
         "image_url": "http://ecx.images-amazon.com/images/I/51UmKMROcNL.jpg",
@@ -59,6 +59,45 @@ Get a product by it's Consumer Notebook pk.
         "title": "Forbidden Island",
         "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B003D7F4YY"
     }
+    
+Filtering by username
+======================
+
+This lists all the products that a person has listed, or compared, or attempted to add to Consumer Notebook.
+
+.. sourcecode:: javascript
+
+    // curl https://consumernotebook.com/api/v1/products/4f3c0161ebae26000400000d/?apikey={apikey}&username=pydanny
+    {
+        "meta": {
+            "limit": 20,
+            "next": "/api/v1/products/?username=pydanny&apikey=72c9f72f2ea75b97c0d5b7117344c6a6&limit=20&offset=20",
+            "offset": 0,
+            "previous": null,
+            "total_count": 266
+        },
+        "objects": [
+            {
+                "creator": "pydanny",
+                "image_url": "http://ecx.images-amazon.com/images/I/416rcP%2BQqHL.jpg",
+                "pk": "4f5122e78db0f8000c000000",
+                "price_range": "$20-50",
+                "resource_uri": "/api/v1/products/4f5122e78db0f8000c000000/",
+                "title": "PajamaCity Dinosaur Print Polar Fleece Footed Pajamas with Drop Seat for Teens and Adults",
+                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B005ZJ4PT8"
+            },
+            {
+                "creator": "pydanny",
+                "image_url": "http://ecx.images-amazon.com/images/I/51xd5JLUbDL.jpg",
+                "pk": "4f5054f57eb9f6000c000000",
+                "price_range": "$20-50",
+                "resource_uri": "/api/v1/products/4f5054f57eb9f6000c000000/",
+                "title": "The 7 Powers of Questions: Secrets to Successful Communication in Life and at Work by Dorothy Leeds",
+                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/0399526145"
+            },
+        ...
+        ]
+    }  
 
 GET /api/v1/products/schema/
 =============================
