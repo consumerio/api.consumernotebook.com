@@ -11,7 +11,7 @@ Get a list of users.
 
 .. sourcecode:: javascript
 
-    // curl --user username:password https://consumernotebook.com/api/v1/users/
+    // curl https://consumernotebook.com/api/v1/users/?apikey={apikey}
     {
         "meta": {
             "limit": 20,
@@ -59,7 +59,7 @@ Example with ``username__startswith=py``
 
 .. sourcecode:: javascript
 
-    // curl --user username:password https://consumernotebook.com/api/v1/users/?username__startswith=py
+    // curl https://consumernotebook.com/api/v1/users/?username__startswith=py&?apikey={apikey}
     {
         "meta": {
             "limit": 20,
@@ -131,7 +131,7 @@ Schema representation of Consumer Notebook user objects.
 
 .. sourcecode:: javascript
 
-    // curl --user username:password https://consumernotebook.com/api/v1/users/schema/
+    // curl https://consumernotebook.com/api/v1/users/schema/?apikey={apikey}
     {
         "allowed_detail_http_methods": ["get"],
         "allowed_list_http_methods": ["get"],

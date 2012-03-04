@@ -9,7 +9,7 @@ GET /api/v1/lists/
 
 .. sourcecode:: javascript
 
-    //  curl --user username:password http://consumernotebook.com/api/v1/lists/
+    //  curl http://consumernotebook.com/api/v1/lists/?apikey={apikey}
     {
         "meta": {
             "limit": 20,
@@ -90,7 +90,7 @@ GET /api/v1/lists/<list_id>/
 
 .. sourcecode:: javascript
 
-    //  curl --user username:password http://consumernotebook.com/api/v1/lists/500/
+    //  curl https://consumernotebook.com/api/v1/lists/500/?apikey={apikey}
     {
         "created": "2012-02-25T13:24:39.212716",
         "description": "",
@@ -149,7 +149,7 @@ This command displays the layout of the CN REST API List object.
 
 .. sourcecode:: javascript
 
-    //  curl --user username:password http://consumernotebook.com/api/v1/lists/schema/
+    //  curl https://consumernotebook.com/api/v1/lists/schema/?apikey={apikey}
     {
         "allowed_detail_http_methods": ["get"],
         "allowed_list_http_methods": ["get"],

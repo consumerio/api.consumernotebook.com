@@ -9,7 +9,7 @@ GET /api/v1/products/
 
 .. sourcecode:: javascript
 
-    //  curl --user username:password https://consumernotebook.com/api/v1/products/
+    //  curl https://consumernotebook.com/api/v1/products/?apikey={apikey}
     
     {
         "meta": {
@@ -49,7 +49,7 @@ Get a product by it's Consumer Notebook pk.
 
 .. sourcecode:: javascript
 
-    // curl --user username:password /api/v1/products/4f3c0161ebae26000400000d/
+    // curl /api/v1/products/4f3c0161ebae26000400000d/?apikey={apikey}
     {
         "creator": "pydanny",
         "image_url": "http://ecx.images-amazon.com/images/I/51UmKMROcNL.jpg",
@@ -67,7 +67,7 @@ This command displays the layout of the CN REST API Product object.
 
 .. sourcecode:: javascript
 
-    //  curl --user username:password https://consumernotebook.com/api/v1/products/schema/
+    //  curl https://consumernotebook.com/api/v1/products/schema/?apikey={apikey}
     {
         "allowed_detail_http_methods": ["get"],
         "allowed_list_http_methods": ["get"],

@@ -6,16 +6,20 @@ Dependencies
 ============
 
 * An authenticated account.
-* A Consumer Notebook API Key. If you don't have one, `please request an API Key`_.
+* A Consumer Notebook API Key. If you don't have one, `please request an API Key`_. You'll need to have created an account, but you can play with the API even while on the waitlist.
 
-.. _`please request an API Key`: http://consumernotebook.com/request-api-key/
+.. _`please request an API Key`: http://consumernotebook.com/api-controls/request/
 
 Authentication
 ==============
 
-All API calls require HTTPS basic authentication and an API key::
+All API calls require an API key::
 
-    $ curl -u "username:PASSWORD" https://consumernotebook.com/api/v1/products.json?api_key=MYAPIKEY
+    $ curl https://consumernotebook.com/api/v1/lists/ -d apikey={apikey} -G
+    
+You can also pass in the API key as an HTTP header::
+
+    $ TODO show this in the HTTP_AUTHORIZATION header
 
 Client Libraries
 ================
