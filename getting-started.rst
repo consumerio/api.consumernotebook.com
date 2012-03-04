@@ -8,7 +8,7 @@ Dependencies
 * An authenticated account.
 * A Consumer Notebook API Key. If you don't have one, `please request an API Key`_. You'll need to have created an account, but you can play with the API even while on the waitlist.
 
-.. _`please request an API Key`: http://consumernotebook.com/api-controls/request/
+.. _`please request an API Key`: http://consumernotebook.com/request-api-key/
 
 Authentication
 ==============
