@@ -67,7 +67,7 @@ This lists all the products that a person has listed, or compared, or attempted 
 
 .. sourcecode:: javascript
 
-    // curl https://consumernotebook.com/api/v1/products/4f3c0161ebae26000400000d/?apikey={apikey}&username=pydanny
+    // curl https://consumernotebook.com/api/v1/products/?apikey={apikey}&username=pydanny
     {
         "meta": {
             "limit": 20,
