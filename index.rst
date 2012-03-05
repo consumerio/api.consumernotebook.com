@@ -28,7 +28,7 @@ Products
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
-GET api/v1/products/         Returns the most recent products added to Consumer Notebook. 
+:ref:`api-v1-products`       Returns the most recent products added to Consumer Notebook. 
 GET /api/v1/products/{id}/   Returns the detail on a specific product.
 GET /api/v1/products/schema/ Returns the structure of a Consumer Notebook product.
 ============================ ============================================================
@@ -55,6 +55,19 @@ GET /api/v1/users/{id}/      Returns the detail on a user.
 GET /api/v1/lists/schema/    Returns the structure of a Consumer Notebook user.
 ============================ ============================================================
 
+
+----
+
+Resources Table of Contents
+============================
+
+.. toctree::
+   :maxdepth: 2
+   
+   api/v1/products
+   
+Old API Docs
+============
 
 .. toctree::
    :maxdepth: 2
