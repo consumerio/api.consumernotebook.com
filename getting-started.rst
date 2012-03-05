@@ -21,14 +21,20 @@ You can also pass in the API key as an HTTP header::
 
     $ TODO show this in the HTTP_AUTHORIZATION header
 
-Client Libraries
-================
+Filtering
+=========
 
-So far there's just a simple Python client library.  If you write a library for another language (or another Python client library for that matter), let us know and we'll link/credit you here.
+Some of the available REST API resources allow filtering of content. An example is ``username`` on the Users_ resource. Filtering is performed by adding ``username={value}`` to the query string. Example of an exact match::
 
-Python:
+    curl https://consumernotebook.com/api/v1/users/?username=pydanny&apikey={apikey}
 
-* python-cn-client_ (alpha) -- by `Daniel Greenfeld`_
+Many REST API filters allow for less specific results by using filter keywords::
+
+    curl https://consumernotebook.com/api/v1/users/?username_startswith=py&apikey={apikey}
+
+The available filterable fields and keywords are detailed in the REST API documentation for each resource.
+
+.. _Users: http://api.consumernotebook.com/en/latest/users-api.html
 
 API Schema
 ==========

@@ -1,7 +1,9 @@
 Consumer Notebook API Documentation
 ===================================
 
-Welcome!  Also see the Consumer Notebook Developer Center (developers.consumernotebook.com_) for our graphic identity kit, featured projects, and much more.
+Welcome!  Also see the Consumer Notebook Developer Center (`developers.consumernotebook.com`_) for our graphic identity kit, featured projects, and much more.
+
+.. _`developers.consumernotebook.com`: http://developers.consumernotebook.com
 
 REST API Features:
 
@@ -18,7 +20,7 @@ First, read this:
    
    getting-started
 
-Then explore our REST API:
+Then explore our REST API resources:
 
 .. toctree::
    :maxdepth: 2
