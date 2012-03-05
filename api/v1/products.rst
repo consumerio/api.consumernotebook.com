@@ -9,15 +9,18 @@ Returns the most recent products added to Consumer Notebook.  This method is can
 Parameters
 ==========
 
-format
+apikey
+    Required for all Consumer Notebook REST API requests. You can also place this in the HTTP_AUTHORIZATION header.
+
+format (optional)
     * json (default)
     * jsonp
     * xml
     
-page
+page (optional)
     Specifies the page of results to retrieve. Defaults to 1.
 
-username
+username (optional)
     This lists all the products that a person has listed, or compared, or attempted to add to Consumer Notebook.
 
 Example Request
