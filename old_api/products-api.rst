@@ -71,7 +71,7 @@ This lists all the products that a person has listed, or compared, or attempted 
     {
         "meta": {
             "limit": 20,
-            "next": "/api/v1/products/?username=pydanny&apikey=72c9f72f2ea75b97c0d5b7117344c6a6&limit=20&offset=20",
+            "next": "/api/v1/products/?username=pydanny&apikey={apikey}&limit=20&offset=20",
             "offset": 0,
             "previous": null,
             "total_count": 266
