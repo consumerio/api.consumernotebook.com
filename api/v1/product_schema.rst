@@ -1,7 +1,7 @@
 .. _api-v1-schema:
 
 ============================
-GET api/v1/products/schema/
+GET /api/v1/products/schema/
 ============================
 
 Returns the current schema for the Consumer Notebook REST API ``product`` resource. 

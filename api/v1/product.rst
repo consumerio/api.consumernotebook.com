@@ -1,8 +1,8 @@
 .. _api-v1-product:
 
-=========================
-GET api/v1/products/{id}/
-=========================
+===========================
+GET /api/v1/products/{id}/
+===========================
 
 Returns the product specified by the {id}. The Consumer Notebook {id} is 24 characters long and accepts alphanumeric values.
 
