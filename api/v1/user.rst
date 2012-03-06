@@ -1,8 +1,8 @@
 .. _api-v1-user:
 
-=====================
-GET /api/v1/user/{id}
-=====================
+======================
+GET /api/v1/users/{id}
+======================
 
 Returns the Consumer Notebook user specified by the ``{id}``.
 

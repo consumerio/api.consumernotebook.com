@@ -1,10 +1,10 @@
-.. _api-v1-user-schema:
+.. _api-v1-grid-schema:
 
 ============================
-GET /api/v1/users/schema/
+GET /api/v1/grids/schema/
 ============================
 
-Returns the current schema for the Consumer Notebook REST API ``user`` resource. 
+Returns the current schema for the Consumer Notebook REST API ``grid`` resource. 
 
 Parameters
 ==========
@@ -21,7 +21,7 @@ Example Request
 
 Get::
 
-    curl http://consumernotebook.com/api/v1/users/schema/ -d apikey={apikey} -G
+    curl http://consumernotebook.com/api/v1/grids/schema/ -d apikey={apikey} -G
     
 Results:
     
@@ -33,67 +33,40 @@ Results:
         "default_format": "application/json",
         "default_limit": 20,
         "fields": {
-            "avatar": {
+            "features": {
                 "blank": false,
                 "default": "No default provided.",
-                "help_text": "Unicode string data. Ex: \"Hello World\"",
-                "nullable": true,
-                "readonly": false,
-                "type": "string",
-                "unique": false
-            },
-            "coins": {
-                "blank": false,
-                "default": 0,
-                "help_text": "Integer data. Ex: 2673",
+                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
                 "nullable": false,
                 "readonly": false,
-                "type": "integer",
+                "type": "list",
                 "unique": false
             },
-            "followers": {
+            "grid_items": {
                 "blank": false,
                 "default": "No default provided.",
                 "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
-                "nullable": true,
+                "nullable": false,
                 "readonly": false,
                 "type": "list",
                 "unique": false
             },
-            "following": {
-                "blank": false,
-                "default": "No default provided.",
-                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
-                "nullable": true,
-                "readonly": false,
-                "type": "list",
-                "unique": false
-            },
-            "fullname": {
+            "id": {
                 "blank": false,
                 "default": "No default provided.",
                 "help_text": "Unicode string data. Ex: \"Hello World\"",
-                "nullable": true,
+                "nullable": false,
                 "readonly": false,
                 "type": "string",
                 "unique": false
             },
-            "grids": {
+            "last_modified_by_user": {
                 "blank": false,
                 "default": "No default provided.",
-                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
-                "nullable": true,
+                "help_text": "A date & time as a string. Ex: \"2010-11-10T03:07:43\"",
+                "nullable": false,
                 "readonly": false,
-                "type": "list",
-                "unique": false
-            },
-            "lists": {
-                "blank": false,
-                "default": "No default provided.",
-                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
-                "nullable": true,
-                "readonly": false,
-                "type": "list",
+                "type": "datetime",
                 "unique": false
             },
             "resource_uri": {
@@ -105,35 +78,23 @@ Results:
                 "type": "string",
                 "unique": false
             },
-            "score": {
+            "title": {
                 "blank": false,
-                "default": 0,
-                "help_text": "Integer data. Ex: 2673",
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
                 "nullable": false,
                 "readonly": false,
-                "type": "integer",
+                "type": "string",
                 "unique": false
             },
             "username": {
                 "blank": false,
                 "default": "No default provided.",
                 "help_text": "Unicode string data. Ex: \"Hello World\"",
-                "nullable": true,
-                "readonly": false,
-                "type": "string",
-                "unique": true
-            },
-            "waitlisted": {
-                "blank": false,
-                "default": true,
-                "help_text": "Boolean data. Ex: True",
                 "nullable": false,
                 "readonly": false,
-                "type": "boolean",
+                "type": "string",
                 "unique": false
             }
-        },
-        "filtering": {
-            "username": 1
         }
     }

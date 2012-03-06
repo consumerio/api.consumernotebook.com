@@ -52,7 +52,7 @@ Resource                     Description
 ============================ ============================================================
 GET /api/v1/grids/           Returns a list of grids in order they were created.
 GET /api/v1/grids/{id}/      Returns the detail on a specific grid.
-GET /api/v1/grids/schema/    Returns the structure of a Consumer Notebook grid.
+:ref:`api-v1-grid-schema`    Returns the structure of a Consumer Notebook grid.
 ============================ ============================================================
 
 
@@ -82,6 +82,7 @@ Resources Table of Contents
    api/v1/lists
    api/v1/list
    api/v1/list_schema
+   api/v1/grid_schema   
    api/v1/users
    api/v1/user
    api/v1/user_schema       
