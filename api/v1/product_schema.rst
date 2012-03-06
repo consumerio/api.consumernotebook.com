@@ -44,6 +44,24 @@ Results:
                 "type": "string",
                 "unique": false
             },
+            "grids": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
+                "nullable": true,
+                "readonly": false,
+                "type": "list",
+                "unique": false
+            },
+            "id": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },
             "image_url": {
                 "blank": false,
                 "default": "No default provided.",
@@ -53,13 +71,13 @@ Results:
                 "type": "string",
                 "unique": false
             },
-            "pk": {
+            "lists": {
                 "blank": false,
                 "default": "No default provided.",
-                "help_text": "Unicode string data. Ex: \"Hello World\"",
-                "nullable": false,
+                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
+                "nullable": true,
                 "readonly": false,
-                "type": "string",
+                "type": "list",
                 "unique": false
             },
             "price_range": {

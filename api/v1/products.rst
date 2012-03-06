@@ -46,7 +46,9 @@ Results:
             {
                 "creator": "pydanny",
                 "image_url": "http://ecx.images-amazon.com/images/I/416rcP%2BQqHL.jpg",
-                "pk": "4f5122e78db0f8000c000000",
+                "id": "4f5122e78db0f8000c000000",
+                "grids": [],
+                "lists": [],                
                 "price_range": "$20-50",
                 "resource_uri": "/api/v1/products/4f5122e78db0f8000c000000/",
                 "title": "PajamaCity Dinosaur Print Polar Fleece Footed Pajamas with Drop Seat for Teens and Adults",
@@ -55,7 +57,9 @@ Results:
             {
                 "creator": "pydanny",
                 "image_url": "http://ecx.images-amazon.com/images/I/51xd5JLUbDL.jpg",
-                "pk": "4f5054f57eb9f6000c000000",
+                "id": "4f5054f57eb9f6000c000000",
+                "grids": [],
+                "lists": [],                
                 "price_range": "$20-50",
                 "resource_uri": "/api/v1/products/4f5054f57eb9f6000c000000/",
                 "title": "The 7 Powers of Questions: Secrets to Successful Communication in Life and at Work by Dorothy Leeds",

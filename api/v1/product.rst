@@ -32,7 +32,9 @@ Results:
     {
         "creator": "gdorn",
         "image_url": "http://ecx.images-amazon.com/images/I/41iKZfi08bL.jpg",
-        "pk": "4f46999dd6771d00c3000000",
+        "id": "4f46999dd6771d00c3000000",
+        "grids": [],
+        "lists": [],        
         "price_range": "$1000-2000",
         "resource_uri": "/api/v1/products/4f46999dd6771d00c3000000/",
         "title": "Apple MacBook Air MC965LL/A 13.3-Inch Laptop",
