@@ -29,6 +29,8 @@ Example Request
 Get::
 
     curl https://consumernotebook.com/api/v1/products/ -d apikey={apikey} -d username=pydanny -G
+    
+Results:    
 
 .. sourcecode:: javascript
 

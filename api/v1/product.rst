@@ -25,6 +25,8 @@ Get::
 
     curl http://consumernotebook.com/api/v1/products/4f46999dd6771d00c3000000/ -d apikey={apikey} -G
     
+Results:
+    
 .. sourcecode:: javascript
 
     {
