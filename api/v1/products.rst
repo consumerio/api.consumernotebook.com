@@ -49,6 +49,7 @@ Results:
                     {
                         "description": "Really good, light laptops.",
                         "id": "4f469943d6771d000e000000",
+                        "resource_uri": "/api/v1/grids/4f469943d6771d000e000000/",                        
                         "title": "13\" Ultrabooks"
                     }
                 ],
@@ -58,6 +59,7 @@ Results:
                     {
                         "description": "This is a mix of various things I like to call my own.",
                         "id": 6,
+                        "resource_uri": "/api/v1/lists/6/",                                                
                         "title": "My Possessions"
                     }
                 ],
@@ -71,6 +73,7 @@ Results:
                 "grids": [{
                     "grid": "",
                     "id": "4f555f83247c21000d000001",
+                    "resource_uri": "/api/v1/grids/4f555f83247c21000d000001/",                                                                    
                     "title": "Doctor Who Holiday Specials"
                 }],
                 "id": "4f555f83247c21000d000000",
@@ -78,6 +81,7 @@ Results:
                 "lists": [{
                     "description": "This is a list of odds and ends I would like to get into my hands. Or at least my Kindle!",
                     "id": 5,
+                    "resource_uri": "/api/v1/lists/5/",                                                                                        
                     "title": "My Wishlist"
                 }],
                 "price_range": "$0-10",

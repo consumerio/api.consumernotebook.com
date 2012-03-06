@@ -35,7 +35,8 @@ Results:
             {
                 "description": "Really good, light laptops.",
                 "id": "4f469943d6771d000e000000",
-                "title": "13\" Ultrabooks"
+                "resource_uri": "/api/v1/grids/4f469943d6771d000e000000/",
+                "title": "13\" Ultrabooks",
             }
         ],
         "id": "4f46999dd6771d00c3000000",
@@ -44,6 +45,7 @@ Results:
             {
                 "description": "This is a mix of various things I like to call my own.",
                 "id": 6,
+                "resource_uri": "/api/v1/lists/6/",
                 "title": "My Possessions"
             }
         ],
