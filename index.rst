@@ -63,7 +63,7 @@ Users
 Resource                     Description
 ============================ ============================================================
 :ref:`api-v1-users`          Returns a list of users.
-GET /api/v1/users/{id}/      Returns the detail on a user.
+:ref:`api-v1-user`           Returns the detail on a user.
 :ref:`api-v1-user-schema`    Returns the structure of a Consumer Notebook user.
 ============================ ============================================================
 
@@ -77,12 +77,13 @@ Resources Table of Contents
    :maxdepth: 2
    
    api/v1/products
-   api/v1/product   
+   api/v1/product
    api/v1/product_schema
-   api/v1/lists   
-   api/v1/list   
+   api/v1/lists
+   api/v1/list
    api/v1/list_schema
-   api/v1/users   
+   api/v1/users
+   api/v1/user
    api/v1/user_schema       
    
 Old API Docs
