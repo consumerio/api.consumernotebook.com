@@ -23,7 +23,7 @@ Example Request
 
 Get::
 
-    curl http://consumernotebook.com/api/v1/products/4f46999dd6771d00c3000000/ -d apikey={apikey} -G
+    curl http://consumernotebook.com/api/v1/products/4f555f83247c21000d000000/ -d apikey={apikey} -G
     
 Results:
     
@@ -31,10 +31,22 @@ Results:
 
     {
         "creator": "gdorn",
-        "image_url": "http://ecx.images-amazon.com/images/I/41iKZfi08bL.jpg",
+        "grids": [
+            {
+                "description": "Really good, light laptops.",
+                "id": "4f469943d6771d000e000000",
+                "title": "13\" Ultrabooks"
+            }
+        ],
         "id": "4f46999dd6771d00c3000000",
-        "grids": [],
-        "lists": [],        
+        "image_url": "http://ecx.images-amazon.com/images/I/41iKZfi08bL.jpg",
+        "lists": [
+            {
+                "description": "This is a mix of various things I like to call my own.",
+                "id": 6,
+                "title": "My Possessions"
+            }
+        ],
         "price_range": "$1000-2000",
         "resource_uri": "/api/v1/products/4f46999dd6771d00c3000000/",
         "title": "Apple MacBook Air MC965LL/A 13.3-Inch Laptop",

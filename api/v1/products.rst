@@ -37,33 +37,53 @@ Results:
     {
         "meta": {
             "limit": 20,
-            "next": "/api/v1/products/?username=pydanny&apikey={apikey}&limit=20&offset=20",
+            "next": "/api/v1/products/?apikey=72c9f72f2ea75b97c0d5b7117344c6a6&limit=20&offset=20",
             "offset": 0,
             "previous": null,
-            "total_count": 266
+            "total_count": 1226
         },
         "objects": [
             {
-                "creator": "pydanny",
-                "image_url": "http://ecx.images-amazon.com/images/I/416rcP%2BQqHL.jpg",
-                "id": "4f5122e78db0f8000c000000",
-                "grids": [],
-                "lists": [],                
-                "price_range": "$20-50",
-                "resource_uri": "/api/v1/products/4f5122e78db0f8000c000000/",
-                "title": "PajamaCity Dinosaur Print Polar Fleece Footed Pajamas with Drop Seat for Teens and Adults",
-                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B005ZJ4PT8"
+                "creator": "gdorn",
+                "grids": [
+                    {
+                        "description": "Really good, light laptops.",
+                        "id": "4f469943d6771d000e000000",
+                        "title": "13\" Ultrabooks"
+                    }
+                ],
+                "id": "4f46999dd6771d00c3000000",
+                "image_url": "http://ecx.images-amazon.com/images/I/41iKZfi08bL.jpg",
+                "lists": [
+                    {
+                        "description": "This is a mix of various things I like to call my own.",
+                        "id": 6,
+                        "title": "My Possessions"
+                    }
+                ],
+                "price_range": "$1000-2000",
+                "resource_uri": "/api/v1/products/4f46999dd6771d00c3000000/",
+                "title": "Apple MacBook Air MC965LL/A 13.3-Inch Laptop",
+                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B005CWHZP4"
             },
             {
                 "creator": "pydanny",
-                "image_url": "http://ecx.images-amazon.com/images/I/51xd5JLUbDL.jpg",
-                "id": "4f5054f57eb9f6000c000000",
-                "grids": [],
-                "lists": [],                
-                "price_range": "$20-50",
-                "resource_uri": "/api/v1/products/4f5054f57eb9f6000c000000/",
-                "title": "The 7 Powers of Questions: Secrets to Successful Communication in Life and at Work by Dorothy Leeds",
-                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/0399526145"
+                "grids": [{
+                    "grid": "",
+                    "id": "4f555f83247c21000d000001",
+                    "title": "Doctor Who Holiday Specials"
+                }],
+                "id": "4f555f83247c21000d000000",
+                "image_url": "http://ecx.images-amazon.com/images/I/51c5UodsF7L._SX500_.jpg",
+                "lists": [{
+                    "description": "This is a list of odds and ends I would like to get into my hands. Or at least my Kindle!",
+                    "id": 5,
+                    "title": "My Wishlist"
+                }],
+                "price_range": "$0-10",
+                "resource_uri": "/api/v1/products/4f555f83247c21000d000000/",
+                "title": "Doctor Who: A Christmas Carol - Amazon Instant Video",
+                "url": "http://go.consumernotebook.com?id=26908X855841&xs=1&url=http%3A//www.amazon.com/gp/product/B004HBVDSQ"
             },
         ...
         ]
