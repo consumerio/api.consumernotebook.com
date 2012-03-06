@@ -19,9 +19,6 @@ format (optional)
 offset (optional)
     Specifies the page of results to retrieve. Defaults to 0.
 
-username (optional)
-    This lists all the lists that a person has added to Consumer Notebook.
-
 Example Request
 ================
 
