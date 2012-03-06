@@ -30,7 +30,7 @@ Resource                     Description
 ============================ ============================================================
 :ref:`api-v1-products`       Returns the most recent products added to Consumer Notebook. 
 :ref:`api-v1-product`        Returns the detail on a specific product.
-GET /api/v1/products/schema/ Returns the structure of a Consumer Notebook product.
+:ref:`api-v1-schema`         Returns the structure of a Consumer Notebook product.
 ============================ ============================================================
 
 Lists
@@ -66,6 +66,7 @@ Resources Table of Contents
    
    api/v1/products
    api/v1/product   
+   api/v1/product_schema
    
 Old API Docs
 ============
