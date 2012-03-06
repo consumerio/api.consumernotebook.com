@@ -20,7 +20,9 @@ First, read this:
    
    getting-started
 
-Then explore our REST API resources:
+   
+
+Explore our REST API resources:
 
 Products
 ==========
@@ -51,7 +53,7 @@ Grids
 Resource                     Description
 ============================ ============================================================
 :ref:`api-v1-grids`          Returns a list of grids in order they were created.
-GET /api/v1/grids/{id}/      Returns the detail on a specific grid.
+:ref:`api-v1-grid`           Returns the detail on a specific grid.
 :ref:`api-v1-grid-schema`    Returns the structure of a Consumer Notebook grid.
 ============================ ============================================================
 
@@ -67,36 +69,33 @@ Resource                     Description
 :ref:`api-v1-user-schema`    Returns the structure of a Consumer Notebook user.
 ============================ ============================================================
 
-
 ----
 
-Resources Table of Contents
-============================
+Bookmarklet API
+================
 
 .. toctree::
-   :maxdepth: 2
-   
-   api/v1/products
-   api/v1/product
-   api/v1/product_schema
-   api/v1/lists
-   api/v1/list
-   api/v1/list_schema
-   api/v1/grids
-   api/v1/grid_schema   
-   api/v1/users
-   api/v1/user
-   api/v1/user_schema       
-   
-Old API Docs
-============
+ :maxdepth: 2
+
+ bookmarklet-api
+
+
+Table of Contents
+=================
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   old_api/products-api
-   old_api/lists-api
-   old_api/grids-api
-   old_api/users-api
-   old_api/bookmarklet-api
-
+    api/v1/products
+    api/v1/product
+    api/v1/product_schema
+    api/v1/lists
+    api/v1/list
+    api/v1/list_schema
+    api/v1/grids
+    api/v1/grid   
+    api/v1/grid_schema   
+    api/v1/users
+    api/v1/user
+    api/v1/user_schema
+    bookmarklet-api
