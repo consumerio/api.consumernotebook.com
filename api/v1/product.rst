@@ -15,7 +15,6 @@ apikey
 format (optional)
     * json (default)
     * jsonp
-    * xml
     
 
 Example Request

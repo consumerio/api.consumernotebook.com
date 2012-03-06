@@ -1,10 +1,10 @@
-.. _api-v1-schema:
+.. _api-v1-list-schema:
 
 ============================
-GET /api/v1/products/schema/
+GET /api/v1/lists/schema/
 ============================
 
-Returns the current schema for the Consumer Notebook REST API ``product`` resource. 
+Returns the current schema for the Consumer Notebook REST API ``list`` resource. 
 
 Parameters
 ==========
@@ -15,13 +15,14 @@ apikey
 format (optional)
     * json (default)
     * jsonp
+    
 
 Example Request
 ================
 
 Get::
 
-    curl http://consumernotebook.com/api/v1/products/schema/ -d apikey={apikey} -G
+    curl http://consumernotebook.com/api/v1/lists/schema/ -d apikey={apikey} -G
     
 Results:
     
@@ -33,58 +34,67 @@ Results:
         "default_format": "application/json",
         "default_limit": 20,
         "fields": {
-            "creator": {
+            "created": {
                 "blank": false,
-                "default": "No default provided.",
-                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "default": "2012-03-06T06:55:53.514757",
+                "help_text": "A date & time as a string. Ex: \"2010-11-10T03:07:43\"",
                 "nullable": false,
                 "readonly": false,
-                "type": "string",
+                "type": "datetime",
                 "unique": false
             },
-            "grids": {
+            "description": {
                 "blank": false,
-                "default": "No default provided.",
-                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
+                "default": "",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
                 "nullable": true,
                 "readonly": false,
-                "type": "list",
+                "type": "string",
                 "unique": false
             },
             "id": {
                 "blank": false,
-                "default": "No default provided.",
+                "default": "",
                 "help_text": "Unicode string data. Ex: \"Hello World\"",
                 "nullable": false,
                 "readonly": false,
                 "type": "string",
-                "unique": false
+                "unique": true
             },
-            "image_url": {
+            "last_modified_by_user": {
                 "blank": false,
-                "default": "No default provided.",
-                "help_text": "Unicode string data. Ex: \"Hello World\"",
-                "nullable": false,
-                "readonly": false,
-                "type": "string",
-                "unique": false
-            },
-            "lists": {
-                "blank": false,
-                "default": "No default provided.",
-                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
+                "default": "2012-03-06T06:47:21.917746",
+                "help_text": "A date & time as a string. Ex: \"2010-11-10T03:07:43\"",
                 "nullable": true,
                 "readonly": false,
-                "type": "list",
+                "type": "datetime",
                 "unique": false
             },
-            "price_range": {
+            "modified": {
                 "blank": false,
-                "default": "No default provided.",
-                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "default": "2012-03-06T06:55:53.514769",
+                "help_text": "A date & time as a string. Ex: \"2010-11-10T03:07:43\"",
                 "nullable": false,
                 "readonly": false,
-                "type": "string",
+                "type": "datetime",
+                "unique": false
+            },
+            "owner": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "A single related resource. Can be either a URI or set of nested resource data.",
+                "nullable": false,
+                "readonly": false,
+                "type": "related",
+                "unique": false
+            },
+            "products": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Many related resources. Can be either a list of URIs or list of individually nested resource data.",
+                "nullable": false,
+                "readonly": false,
+                "type": "related",
                 "unique": false
             },
             "resource_uri": {
@@ -96,7 +106,7 @@ Results:
                 "type": "string",
                 "unique": false
             },
-            "title": {
+            "slug": {
                 "blank": false,
                 "default": "No default provided.",
                 "help_text": "Unicode string data. Ex: \"Hello World\"",
@@ -105,7 +115,7 @@ Results:
                 "type": "string",
                 "unique": false
             },
-            "url": {
+            "title": {
                 "blank": false,
                 "default": "No default provided.",
                 "help_text": "Unicode string data. Ex: \"Hello World\"",

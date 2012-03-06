@@ -41,7 +41,7 @@ Resource                     Description
 ============================ ============================================================
 GET /api/v1/lists/           Returns the most recent lists modified.
 GET /api/v1/lists/{id}/      Returns the detail on a specific lists.
-GET /api/v1/lists/schema/    Returns the structure of a Consumer Notebook list.
+:ref:`api-v1-list-schema`    Returns the structure of a Consumer Notebook list.
 ============================ ============================================================
 
 Grids
@@ -79,6 +79,7 @@ Resources Table of Contents
    api/v1/products
    api/v1/product   
    api/v1/product_schema
+   api/v1/list_schema
    
 Old API Docs
 ============

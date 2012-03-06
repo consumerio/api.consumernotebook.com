@@ -15,10 +15,9 @@ apikey
 format (optional)
     * json (default)
     * jsonp
-    * xml
     
-page (optional)
-    Specifies the page of results to retrieve. Defaults to 1.
+offset (optional)
+    Specifies the page of results to retrieve. Defaults to 0.
 
 username (optional)
     This lists all the products that a person has listed, or compared, or attempted to add to Consumer Notebook.
