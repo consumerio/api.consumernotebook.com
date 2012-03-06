@@ -44,13 +44,25 @@ GET /api/v1/lists/{id}/      Returns the detail on a specific lists.
 GET /api/v1/lists/schema/    Returns the structure of a Consumer Notebook list.
 ============================ ============================================================
 
+Grids
+=====
+
+============================ ============================================================
+Resource                     Description
+============================ ============================================================
+GET /api/v1/grids/           Returns a list of grids in order they were created.
+GET /api/v1/grids/{id}/      Returns the detail on a specific grid.
+GET /api/v1/grids/schema/    Returns the structure of a Consumer Notebook grid.
+============================ ============================================================
+
+
 Users
 =====
 
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
-GET /api/v1/users/           Returns a list of user modified.
+GET /api/v1/users/           Returns a list of users.
 GET /api/v1/users/{id}/      Returns the detail on a user.
 GET /api/v1/lists/schema/    Returns the structure of a Consumer Notebook user.
 ============================ ============================================================
