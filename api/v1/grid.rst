@@ -29,11 +29,11 @@ Results:
 .. sourcecode:: javascript
 
     {
-        "id": "4f4c6df09acecc000e000002",
-        "last_modified_by_user": "2012-02-27T22:18:27.268000",
-        "resource_uri": "/api/v1/grids/4f4c6df09acecc000e000002/",
-        "slug": "best-wireless-routers",
-        "title": "Best Wireless Routers",
-        "url": "http://consumernotebook.com/grids/pydanny/best-wireless-routers/",
+        "id": "4f319564bf8bbd000a000000",
+        "last_modified_by_user": "2012-02-23T15:28:14.892000",
+        "resource_uri": "/api/v1/grids/4f319564bf8bbd000a000000/",
+        "slug": "must-have-python-programming-books",
+        "title": "Must-Have Python Programming Books ",
+        "url": "http://consumernotebook.com/grids/pydanny/must-have-python-programming-books/",
         "username": "pydanny"
     }
