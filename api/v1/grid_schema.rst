@@ -33,24 +33,6 @@ Results:
         "default_format": "application/json",
         "default_limit": 20,
         "fields": {
-            "features": {
-                "blank": false,
-                "default": "No default provided.",
-                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
-                "nullable": false,
-                "readonly": false,
-                "type": "list",
-                "unique": false
-            },
-            "grid_items": {
-                "blank": false,
-                "default": "No default provided.",
-                "help_text": "A list of data. Ex: ['abc', 26.73, 8]",
-                "nullable": false,
-                "readonly": false,
-                "type": "list",
-                "unique": false
-            },
             "id": {
                 "blank": false,
                 "default": "No default provided.",
@@ -78,6 +60,15 @@ Results:
                 "type": "string",
                 "unique": false
             },
+            "slug": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            },            
             "title": {
                 "blank": false,
                 "default": "No default provided.",
@@ -87,6 +78,15 @@ Results:
                 "type": "string",
                 "unique": false
             },
+            "url": {
+                "blank": false,
+                "default": "No default provided.",
+                "help_text": "Unicode string data. Ex: \"Hello World\"",
+                "nullable": false,
+                "readonly": false,
+                "type": "string",
+                "unique": false
+            }            
             "username": {
                 "blank": false,
                 "default": "No default provided.",
