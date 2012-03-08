@@ -19,8 +19,13 @@ format (optional)
 offset (optional)
     Specifies the page of results to retrieve. Defaults to 0.
 
+title (optional)    
+    Search products by title.
+
 username (optional)
     This lists all the products that a person has listed, or compared, or attempted to add to Consumer Notebook.
+
+    
 
 Example Request
 ================
