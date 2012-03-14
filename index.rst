@@ -21,6 +21,8 @@ First, read this:
 
 Explore our REST API resources:
 
+.. note:: The POST API will be launched around March 20th.
+
 Products
 ==========
 
