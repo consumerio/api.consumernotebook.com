@@ -29,7 +29,7 @@ Products
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
-:ref:`api-v1-products`       Returns the most recent products added to Consumer Notebook. 
+:ref:`api-v1-products`       Returns the most recent products added to Consumer Notebook.
 :ref:`api-v1-product`        Returns the detail on a specific product.
 :ref:`api-v1-schema`         Returns the structure of a Consumer Notebook product.
 ============================ ============================================================
@@ -92,8 +92,8 @@ Table of Contents
     api/v1/list
     api/v1/list_schema
     api/v1/grids
-    api/v1/grid   
-    api/v1/grid_schema   
+    api/v1/grid
+    api/v1/grid_schema
     api/v1/users
     api/v1/user
     api/v1/user_schema
