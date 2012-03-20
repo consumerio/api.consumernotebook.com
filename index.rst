@@ -63,10 +63,12 @@ Users
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
+:ref:`api-v1-my-profile`     Returns your profile
 :ref:`api-v1-users`          Returns a list of users.
 :ref:`api-v1-user`           Returns the detail on a user.
 :ref:`api-v1-user-schema`    Returns the structure of a Consumer Notebook user.
 ============================ ============================================================
+
 
 ----
 
