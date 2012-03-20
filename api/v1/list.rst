@@ -46,7 +46,7 @@ Results:
             "external_link": "http://www.amazon.com/gp/product/B0053BG370/?ie=UTF8&tag=cn-001-20&linkCode=ur2",
             "id": "4f59a086204d33000e000000",
             "image_url": "http://ecx.images-amazon.com/images/I/61fezndpqNL.jpg",
-            "link": "/motionsports-adrenaline-xbox/4f59a086204d33000e000000/",
+            "link": "https://consumernotebook.com/motionsports-adrenaline-xbox/4f59a086204d33000e000000/",
             "price_range": "$50-100",
             "resource_uri": "/api/v1/products/4f59a086204d33000e000000/",
             "title": "MotionSports Adrenaline: XBox"
@@ -56,7 +56,7 @@ Results:
             "external_link": "http://www.amazon.com/gp/product/B004U9T6FM/?ie=UTF8&tag=cn-001-20&linkCode=ur2",
             "id": "4f59a0f55ddae9000d000000",
             "image_url": "http://ecx.images-amazon.com/images/I/61j1tcm6ZjL.jpg",
-            "link": "/powerup-heroes-xbox/4f59a0f55ddae9000d000000/",
+            "link": "https://consumernotebook.com/powerup-heroes-xbox/4f59a0f55ddae9000d000000/",
             "price_range": "$20-50",
             "resource_uri": "/api/v1/products/4f59a0f55ddae9000d000000/",
             "title": "PowerUP Heroes: XBox"
@@ -66,7 +66,7 @@ Results:
             "external_link": "http://www.amazon.com/gp/product/B002I0H8FK/?ie=UTF8&tag=cn-001-20&linkCode=ur2",
             "id": "4f5b9c9f24b4b3000e000003",
             "image_url": "http://ecx.images-amazon.com/images/I/5109BtpAZPL.jpg",
-            "link": "/child-of-eden-xbox-360-video-games/4f5b9c9f24b4b3000e000003/",
+            "link": "https://consumernotebook.com/child-of-eden-xbox-360-video-games/4f5b9c9f24b4b3000e000003/",
             "price_range": "$20-50",
             "resource_uri": "/api/v1/products/4f5b9c9f24b4b3000e000003/",
             "title": "Child Of Eden: Xbox 360: Video Games"
@@ -76,7 +76,7 @@ Results:
             "external_link": "http://www.amazon.com/gp/product/B0056WJA3K/?ie=UTF8&tag=cn-001-20&linkCode=ur2",
             "id": "4f5b9e1736a633000d000006",
             "image_url": "http://ecx.images-amazon.com/images/I/51llqktiEZL.jpg",
-            "link": "/deepak-chopras-leela-xbox-360-video-games/4f5b9e1736a633000d000006/",
+            "link": "https://consumernotebook.com/deepak-chopras-leela-xbox-360-video-games/4f5b9e1736a633000d000006/",
             "price_range": "$20-50",
             "resource_uri": "/api/v1/products/4f5b9e1736a633000d000006/",
             "title": "Deepak Chopra's Leela: Xbox 360: Video Games"
@@ -86,7 +86,7 @@ Results:
             "external_link": "http://www.amazon.com/gp/product/B00061NL7W/?ie=UTF8&tag=cn-001-20&linkCode=ur2",
             "id": "4f5ba47936a633000e000006",
             "image_url": "http://ecx.images-amazon.com/images/I/51vm-es1RUL.jpg",
-            "link": "/yourself-fitness-xbox/4f5ba47936a633000e000006/",
+            "link": "https://consumernotebook.com/yourself-fitness-xbox/4f5ba47936a633000e000006/",
             "price_range": "$50-100",
             "resource_uri": "/api/v1/products/4f5ba47936a633000e000006/",
             "title": "Yourself Fitness: Xbox:"
@@ -96,7 +96,7 @@ Results:
             "external_link": "http://www.amazon.com/gp/product/B002I0H9WM/?ie=UTF8&tag=cn-001-20&linkCode=ur2",
             "id": "4f5bab081cfd5d000c000008",
             "image_url": "http://ecx.images-amazon.com/images/I/51gcyDU9V%2BL.jpg",
-            "link": "/your-shape-fitness-evolved-video-games/4f5bab081cfd5d000c000008/",
+            "link": "https://consumernotebook.com/your-shape-fitness-evolved-video-games/4f5bab081cfd5d000c000008/",
             "price_range": "$50-100",
             "resource_uri": "/api/v1/products/4f5bab081cfd5d000c000008/",
             "title": "Your Shape Fitness Evolved: Video Games"
