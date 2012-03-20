@@ -10,7 +10,7 @@ Parameters
 ==========
 
 access_token
-    Oauth2 access token required for all Consumer Notebook REST API requests.
+    OAuth2 access token required for all Consumer Notebook REST API requests.
 
 format (optional)
     * json (default)

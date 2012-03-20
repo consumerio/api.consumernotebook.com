@@ -40,6 +40,7 @@ Lists
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
+:ref:`api-v1-my-lists`       Returns your list
 :ref:`api-v1-lists`          Returns the most recent lists modified.
 :ref:`api-v1-list`           Returns the detail on a specific list.
 ============================ ============================================================
@@ -88,6 +89,7 @@ Table of Contents
     api/v1/products
     api/v1/product
     api/v1/product_schema
+    api/v1/my-lists
     api/v1/lists
     api/v1/list
     api/v1/grids
