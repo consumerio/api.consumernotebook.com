@@ -40,7 +40,7 @@ Lists
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
-:ref:`api-v1-my-lists`       Returns your list
+:ref:`api-v1-my-lists`       Returns your lists
 :ref:`api-v1-lists`          Returns the most recent lists modified.
 :ref:`api-v1-list`           Returns the detail on a specific list.
 ============================ ============================================================
@@ -51,6 +51,7 @@ Grids
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
+:ref:`api-v1-my-grids`       Returns your grids
 :ref:`api-v1-grids`          Returns a list of grids in order they were created.
 :ref:`api-v1-grid`           Returns the detail on a specific grid.
 ============================ ============================================================
@@ -92,6 +93,7 @@ Table of Contents
     api/v1/my-lists
     api/v1/lists
     api/v1/list
+    api/v1/my-grids
     api/v1/grids
     api/v1/grid
     api/v1/my-profile    
