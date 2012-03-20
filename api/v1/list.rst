@@ -1,10 +1,10 @@
 .. _api-v1-list:
 
-=====================
-GET /api/v1/list/{id}
-=====================
+========================================
+GET /api/v1/lists/{username}/{list_slug}
+========================================
 
-Returns the list described by the id.
+Returns the list described by the username and list slug.
 
 Parameters
 ==========
@@ -21,7 +21,7 @@ Example Request
 
 Get::
 
-    curl https://consumernotebook.com/api/v1/lists/36/ -d access_token={access_token} -G
+    curl https://consumernotebook.com/api/v1/lists/pydanny/complete-list-of-python-programming-books/ -d access_token={access_token} -G
     
 Results:    
 

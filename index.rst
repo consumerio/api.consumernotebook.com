@@ -7,8 +7,8 @@ Welcome!  Also see the Consumer Notebook Developer Center (`developers.consumern
 
 REST API Features:
 
-* Get Product, Grid, and List data via our REST API.
-* API Keys so you/we can track usage.
+* Get Product, Grid, and List data as JSON responses.
+* OAuth2 authentication so you/we can track usage.
 
 First, read this:
 
@@ -41,8 +41,7 @@ Lists
 Resource                     Description
 ============================ ============================================================
 :ref:`api-v1-lists`          Returns the most recent lists modified.
-:ref:`api-v1-list`           Returns the detail on a specific lists.
-:ref:`api-v1-list-schema`    Returns the structure of a Consumer Notebook list.
+:ref:`api-v1-list`           Returns the detail on a specific list.
 ============================ ============================================================
 
 Grids
@@ -53,7 +52,6 @@ Resource                     Description
 ============================ ============================================================
 :ref:`api-v1-grids`          Returns a list of grids in order they were created.
 :ref:`api-v1-grid`           Returns the detail on a specific grid.
-:ref:`api-v1-grid-schema`    Returns the structure of a Consumer Notebook grid.
 ============================ ============================================================
 
 
@@ -92,10 +90,8 @@ Table of Contents
     api/v1/product_schema
     api/v1/lists
     api/v1/list
-    api/v1/list_schema
     api/v1/grids
     api/v1/grid
-    api/v1/grid_schema
     api/v1/my-profile    
     api/v1/users
     api/v1/user
