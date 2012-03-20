@@ -26,7 +26,7 @@ Get::
 
     curl https://consumernotebook.com/api/v1/lists/ -d access_token={access_token} -G
     
-Results:    
+Results:
 
 .. sourcecode:: javascript
 
