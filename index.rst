@@ -7,8 +7,8 @@ Welcome!  Also see the Consumer Notebook Developer Center (`developers.consumern
 
 REST API Features:
 
-* Get Product, Grid, and List data via our REST API.
-* API Keys so you/we can track usage.
+* Get Product, Grid, and List data as JSON responses.
+* OAuth2 authentication so you/we can track usage.
 
 First, read this:
 
