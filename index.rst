@@ -96,6 +96,7 @@ Table of Contents
     api/v1/grids
     api/v1/grid
     api/v1/grid_schema
+    api/v1/my-profile    
     api/v1/users
     api/v1/user
     api/v1/user_schema
