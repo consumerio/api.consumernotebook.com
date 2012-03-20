@@ -41,8 +41,7 @@ Lists
 Resource                     Description
 ============================ ============================================================
 :ref:`api-v1-lists`          Returns the most recent lists modified.
-:ref:`api-v1-list`           Returns the detail on a specific lists.
-:ref:`api-v1-list-schema`    Returns the structure of a Consumer Notebook list.
+:ref:`api-v1-list`           Returns the detail on a specific list.
 ============================ ============================================================
 
 Grids
@@ -90,7 +89,6 @@ Table of Contents
     api/v1/product_schema
     api/v1/lists
     api/v1/list
-    api/v1/list_schema
     api/v1/grids
     api/v1/grid
     api/v1/grid_schema
