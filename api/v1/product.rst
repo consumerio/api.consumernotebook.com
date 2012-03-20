@@ -9,8 +9,8 @@ Returns the product specified by the {id}. The Consumer Notebook {id} is 24 char
 Parameters
 ==========
 
-apikey
-    Required for all Consumer Notebook REST API requests. You can also place this in the HTTP_AUTHORIZATION header.
+access_token
+    Oauth2 access token required for all Consumer Notebook REST API requests.
 
 format (optional)
     * json (default)
@@ -22,7 +22,7 @@ Example Request
 
 Get::
 
-    curl http://consumernotebook.com/api/v1/products/4f555f83247c21000d000000/ -d apikey={apikey} -G
+    curl http://consumernotebook.com/api/v1/products/4f555f83247c21000d000000/ -d access_token={access_token} -G
     
 Results:
     

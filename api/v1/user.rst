@@ -9,8 +9,8 @@ Returns the Consumer Notebook user specified by the ``{id}``.
 Parameters
 ==========
 
-apikey
-    Required for all Consumer Notebook REST API requests. You can also place this in the HTTP_AUTHORIZATION header.
+access_token
+    Oauth2 access token required for all Consumer Notebook REST API requests.
 
 format (optional)
     * json (default)
@@ -22,7 +22,7 @@ Example Request
 
 Get::
 
-    curl https://consumernotebook.com/api/v1/users/4/ -d apikey={apikey} -G
+    curl https://consumernotebook.com/api/v1/users/4/ -d access_token={access_token} -G
     
 Results:    
 

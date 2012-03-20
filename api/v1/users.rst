@@ -9,8 +9,8 @@ Returns the Consumer Notebook users.  This method is can only return up to 20 us
 Parameters
 ==========
 
-apikey
-    Required for all Consumer Notebook REST API requests. You can also place this in the HTTP_AUTHORIZATION header.
+access_token
+    Oauth2 access token required for all Consumer Notebook REST API requests.
 
 format (optional)
     * json (default)
@@ -27,7 +27,7 @@ Example Request
 
 Get::
 
-    curl https://consumernotebook.com/api/v1/users/ -d apikey={apikey} -d username__startswith=a -G
+    curl https://consumernotebook.com/api/v1/users/ -d access_token={access_token} -d username__startswith=a -G
     
 Results:    
 
@@ -36,7 +36,7 @@ Results:
     {
         "meta": {
             "limit": 20,
-            "next": "/api/v1/users/?apikey=72c9f72f2ea75b97c0d5b7117344c6a6&limit=20&offset=20",
+            "next": "/api/v1/users/?access_token={access_token}&limit=20&offset=20",
             "offset": 0,
             "previous": null,
             "total_count": 398

@@ -14,24 +14,20 @@ Dependencies
 Authentication
 ==============
 
-All API calls require an API key::
+All API calls require an OAuth 2 access token::
 
-    $ curl https://consumernotebook.com/api/v1/lists/ -d apikey={apikey} -G
+    $ curl https://consumernotebook.com/api/v1/lists/ -d access_token={access_token} -G
     
-You can also pass in the API key as an HTTP header::
-
-    $ TODO show this in the HTTP_AUTHORIZATION header
-
 Filtering
 =========
 
 Some of the available REST API resources allow filtering of content. An example is ``username`` on the Users_ resource. Filtering is performed by adding ``username={value}`` to the query string. Example of an exact match::
 
-    curl https://consumernotebook.com/api/v1/users/?username=pydanny&apikey={apikey}
+    curl https://consumernotebook.com/api/v1/users/?username=pydanny&access_token={access_token}
 
 Many REST API filters allow for less specific results by using filter keywords::
 
-    curl https://consumernotebook.com/api/v1/users/?username_startswith=py&apikey={apikey}
+    curl https://consumernotebook.com/api/v1/users/?username_startswith=py&access_token={access_token}
 
 The available filterable fields and keywords are detailed in the REST API documentation for each resource.
 

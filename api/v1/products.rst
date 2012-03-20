@@ -9,8 +9,8 @@ Returns the most recent products added to Consumer Notebook.  This method is can
 Parameters
 ==========
 
-apikey
-    Required for all Consumer Notebook REST API requests. You can also place this in the HTTP_AUTHORIZATION header.
+access_token
+    Oauth2 access token required for all Consumer Notebook REST API requests.
 
 format (optional)
     * json (default)
@@ -32,7 +32,7 @@ Example Request
 
 Get::
 
-    curl https://consumernotebook.com/api/v1/products/ -d apikey={apikey} -d username=pydanny -G
+    curl https://consumernotebook.com/api/v1/products/ -d access_token={access_token} -d username=pydanny -G
     
 Results:    
 
@@ -41,7 +41,7 @@ Results:
     {
         "meta": {
             "limit": 20,
-            "next": "/api/v1/products/?apikey={apikey}&limit=20&offset=20",
+            "next": "/api/v1/products/?access_token={access_token}&limit=20&offset=20",
             "offset": 0,
             "previous": null,
             "total_count": 1226

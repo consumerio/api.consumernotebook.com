@@ -9,8 +9,8 @@ Returns the current schema for the Consumer Notebook REST API ``list`` resource.
 Parameters
 ==========
 
-apikey
-    Required for all Consumer Notebook REST API requests. You can also place this in the HTTP_AUTHORIZATION header.
+access_token
+    Oauth2 access token required for all Consumer Notebook REST API requests.
 
 format (optional)
     * json (default)
@@ -22,7 +22,7 @@ Example Request
 
 Get::
 
-    curl http://consumernotebook.com/api/v1/lists/schema/ -d apikey={apikey} -G
+    curl http://consumernotebook.com/api/v1/lists/schema/ -d access_token={access_token} -G
     
 Results:
     

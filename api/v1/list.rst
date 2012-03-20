@@ -9,9 +9,9 @@ Returns the list described by the id.
 Parameters
 ==========
 
-apikey
-    Required for all Consumer Notebook REST API requests. You can also place this in the HTTP_AUTHORIZATION header.
-
+access_token
+    Oauth2 access token required for all Consumer Notebook REST API requests.
+    
 format (optional)
     * json (default)
     * jsonp
@@ -21,7 +21,7 @@ Example Request
 
 Get::
 
-    curl https://consumernotebook.com/api/v1/lists/36/ -d apikey={apikey} -G
+    curl https://consumernotebook.com/api/v1/lists/36/ -d access_token={access_token} -G
     
 Results:    
 
