@@ -31,7 +31,7 @@ Results:
     {
         "meta": {
             "limit": 20,
-            "next": "/api/v1/my-grids/?access_token=e57a98c3e8b3ea195d16&limit=20&offset=20",
+            "next": "/api/v1/my-grids/?access_token={access_token}&limit=20&offset=20",
             "offset": 0,
             "previous": null,
             "total_count": 116
