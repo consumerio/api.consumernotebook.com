@@ -1,8 +1,8 @@
 .. _api-v1-grid:
 
-======================
-GET /api/v1/grids/{id}
-======================
+========================================
+GET /api/v1/grids/{username}/{grid_slug}
+========================================
 
 Returns the specified ``grid`` resource.
 
@@ -22,7 +22,7 @@ Example Request
 
 Get::
 
-    curl https://consumernotebook.com/api/v1/grids/4f319564bf8bbd000a000000/ -d access_token={access_token} -G
+    curl https://consumernotebook.com/api/v1/grids/pydanny/must-have-python-programming-books/ -d access_token={access_token} -G
     
 Results:    
 

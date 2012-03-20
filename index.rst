@@ -52,7 +52,6 @@ Resource                     Description
 ============================ ============================================================
 :ref:`api-v1-grids`          Returns a list of grids in order they were created.
 :ref:`api-v1-grid`           Returns the detail on a specific grid.
-:ref:`api-v1-grid-schema`    Returns the structure of a Consumer Notebook grid.
 ============================ ============================================================
 
 
@@ -91,7 +90,6 @@ Table of Contents
     api/v1/list
     api/v1/grids
     api/v1/grid
-    api/v1/grid_schema
     api/v1/users
     api/v1/user
     api/v1/user_schema
