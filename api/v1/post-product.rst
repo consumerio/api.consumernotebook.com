@@ -25,10 +25,6 @@ price_range
 title
     Name of the product in human readable format
 
-format (optional)
-    * json (default)
-    * jsonp
-
 
 Example Request
 ================
