@@ -29,6 +29,8 @@ Products
 ============================ ============================================================
 Resource                     Description
 ============================ ============================================================
+:ref:`api-v1-post-product`   Adds or bookmarks a product
+:ref:`api-v1-my-products`    Returns a list of products you've bookmarked
 :ref:`api-v1-products`       Returns the most recent products added to Consumer Notebook.
 :ref:`api-v1-product`        Returns the detail on a specific product.
 :ref:`api-v1-schema`         Returns the structure of a Consumer Notebook product.
@@ -87,6 +89,8 @@ Table of Contents
 .. toctree::
     :maxdepth: 2
 
+    api/v1/post-product
+    api/v1/my-products
     api/v1/products
     api/v1/product
     api/v1/product_schema

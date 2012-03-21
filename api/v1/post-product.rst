@@ -1,7 +1,7 @@
-.. _api-v1-post-products:
+.. _api-v1-post-product:
 
 ===========================
-POST /api/v1/post-products/
+POST /api/v1/post-product/
 ===========================
 
 Adds a product, either as a bookmark for existing products or as a new product to the 
