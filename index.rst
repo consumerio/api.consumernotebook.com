@@ -39,13 +39,14 @@ Resource                     Description
 Lists
 ==========
 
-============================ ============================================================
-Resource                     Description
-============================ ============================================================
-:ref:`api-v1-my-lists`       Returns your lists
-:ref:`api-v1-lists`          Returns the most recent lists modified.
-:ref:`api-v1-list`           Returns the detail on a specific list.
-============================ ============================================================
+=============================== ============================================================
+Resource                        Description
+=============================== ============================================================
+:ref:`api-v1-my-lists`          Returns your lists
+:ref:`api-v1-lists`             Returns the most recent lists modified.
+:ref:`api-v1-list`              Returns the detail on a specific list.
+:ref:`api-v1-post-manage-lists` Adds a list. The list is the property of the creating user.
+=============================== ============================================================
 
 Grids
 =====
@@ -98,6 +99,7 @@ Table of Contents
     api/v1/my-lists
     api/v1/lists
     api/v1/list
+    api/v1/post-manage-lists
     api/v1/my-grids
     api/v1/grids
     api/v1/grid
