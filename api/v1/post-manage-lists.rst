@@ -4,8 +4,6 @@
 POST /api/v1/post-manage-lists/
 ===============================
 
-.. warning:: This portion of the API is in an ALPHA state and may change.
-
 Adds a list. The list is automatically the property of the creating user.
 
 Parameters
@@ -39,4 +37,6 @@ Results::
     Server: WSGIServer/0.1 Python/2.7.1
     Vary: Cookie
     Content-Type: text/html; charset=utf-8
-    Location: https://consumernotebook.com/api/v1/manage-lists/556/
+    Location: https://consumernotebook.com/api/v1/manage-lists/pydanny/test-slug/
+    
+.. note:: You will have to change the name of 'manage-lists' to 'lists' in order to use this list object for GETs.
