@@ -4,7 +4,7 @@
 POST /api/v1/post-manage-lists/
 ===============================
 
-.. warning:: This API Call is in alpha and may change.
+.. warning:: This portion of the API is in an ALPHA state and may change.
 
 Adds a list. The list is automatically the property of the creating user.
 
