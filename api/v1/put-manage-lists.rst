@@ -14,16 +14,21 @@ Parameters
 access_token
     OAuth2 access token required for all Consumer Notebook REST API requests. 
 
-title (optional)
-    Name of the list in human readable format.
+add_products (optional)
+    A comma delineated list of product IDs. Any that are not duplicates are added to the list. TODO - implement
 
 description (optional)
     A reasonably long description of the purpose of the list.
+
+delete_products (optional)
+    A comma delineated list of product IDs that are deleted from the list. TODO - implement
 
 slug (optional)
     A string made up from characters, numbers, underscores, or hyphens that is unique to the user.
     If a slug is not provided then one will be automatically generated from the title.
 
+title (optional)
+    Name of the list in human readable format.
 
 Example Request
 ================
